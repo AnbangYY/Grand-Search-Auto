@@ -114,7 +114,7 @@ public class Car {
 
         final Type CUS_LIST_TYPE = new TypeToken<List<Car>>() {
         }.getType();
-        //or TypeToken.getParameterized(ArrayList.class, PersonJSON.class).getType();
+        // TypeToken.getParameterized(ArrayList.class, PersonJSON.class).getType();
 
         try {
             jsonReader = new JsonReader(new FileReader(file));

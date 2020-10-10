@@ -16,6 +16,7 @@ public class Car {
     private int seat;
     private String brand;
     private Color color;
+    private String name;
 
     /**
      * Create a uninitialized car.
@@ -30,11 +31,16 @@ public class Car {
      * @param price the price of car
      * @param seat  the number of seats in the car
      */
-    public Car(String brand, double price, int seat, Color color) {
+    public Car(String name, String brand, double price, int seat, Color color) {
         this.brand = brand;
         this.price = price;
         this.seat = seat;
         this.color = color;
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public double getPrice() {

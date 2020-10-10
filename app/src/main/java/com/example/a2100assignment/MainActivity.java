@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] mStrs = {"bmw", "qq", "audi", "benz"};
+    private String[] mStrs = { "qq", "audi", "benz"};
     private SearchView mySearchView;
     private ListView myListView;
     private ArrayAdapter adapter;

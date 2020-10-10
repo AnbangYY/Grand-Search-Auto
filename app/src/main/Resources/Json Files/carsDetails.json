@@ -1,51 +1,22 @@
-[
-  { "name" : "Model X",
-    "brand" : "Tesla",
-    "price" : 138990.0,
-    "seat" : 5,
-    "color" : "red"
-  },
-
-  { "name" : "Mustang",
-    "brand" : "Ford",
-    "price" : 35630,
-    "seat" : 4,
-    "color" : "red"
-  },
-
-  { "name" : "Model 3",
-    "brand" : "Tesla",
-    "price" : 67900.0,
-    "seat" : 5,
-    "color" : "white"
-  },
-
-  { "name" : "F-Type",
-    "brand" : "Jaguar",
-    "price" : 61600.0,
-    "seat" : 4,
-    "color" : "blue"
-  },
-
-  { "name" : "Model Y",
-    "brand" : "Tesla",
-    "price" : 138990.0,
-    "seat" : 5,
-    "color" : "red"
-  },
-
-  { "name" : "Corolla",
-    "brand" : "Toyota",
-    "price" : 17490.0,
-    "seat" : 5,
-    "color" : "yellow"
-  },
-
-  { "name" : "Cullinan",
-    "brand" : "Rolls Royce",
-    "price" : 325000.0,
-    "seat" : 5,
-    "color" : "black"
-  }
-
-]
+{
+  "birds": [
+    {
+      "scientific_name": "Cyanocitta stelleri",
+      "common_name": "Steller's jay",
+      "image": "stellers_jay",
+      "description": "The Steller's jay is a jay native to western North America, closely related to the blue jay found in the rest of the continent, but with a black head and upper body. It is also known as the long-crested jay, mountain jay, Braham's jay and pine jay. It is the only crested jay west of the Rocky Mountains."
+    },
+    {
+      "scientific_name": "Tachycineta thalassina",
+      "common_name": "Violet-green swallow",
+      "image": "violet_green_swallow",
+      "description": "The violet-green swallow is a small North American passerine bird in the swallow family. These aerial insectivores are distributed along the west coast from Alaska to Mexico, extending as far east as Montana and Texas. With an appearance very similar to the tree swallow, these individuals can be identified by the white rump side-patches that appear to separate their green back and purple tail. "
+    },
+    {
+      "scientific_name": "Turdus migratorius",
+      "common_name": "American robin",
+      "image": "american_robin",
+      "description": "The American robin is a migratory songbird of the true thrush genus and Turdidae, the wider thrush family. It is named after the European robin[2] because of its reddish-orange breast, though the two species are not closely related, with the European robin belonging to the Old World flycatcher family. The American robin is widely distributed throughout North America, wintering from southern Canada to central Mexico and along the Pacific Coast. "
+    }
+  ]
+}

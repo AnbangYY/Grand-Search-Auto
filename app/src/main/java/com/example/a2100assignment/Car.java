@@ -86,7 +86,7 @@ public class Car {
         if (o instanceof Car) {
             Car c = (Car) o;
             return this.brand.equals(c.brand) && this.price == c.price
-                    && this.seat == c.seat;
+                    && this.seat == c.seat && this.color == c.color;
         }
 
         return false;

@@ -29,6 +29,7 @@ dependencies {
     implementation fileTree(dir: 'src\\main\\java\\com\\example\\a2100assignment\\JSON', include: ['*.aar', '*.jar'], exclude: [])
     implementation files('src\\main\\java\\com\\example\\a2100assignment\\JSON\\gson-2.8.6.jar')
     implementation 'junit:junit:4.13'
+    implementation 'org.junit:junit-gradle:5.0.0-ALPHA'
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

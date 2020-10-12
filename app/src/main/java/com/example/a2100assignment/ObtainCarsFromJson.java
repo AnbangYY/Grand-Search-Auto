@@ -18,7 +18,7 @@ import static junit.framework.TestCase.assertEquals;
 public class ObtainCarsFromJson {
 
 
-    public static ArrayList<Car> getCarList(File file) throws IOException{
+    public static  ArrayList<Car> getCarList(File file) throws IOException{
         ArrayList carCollection = new ArrayList();
         Gson gson = new Gson();
         JsonReader jsonReader = null;
@@ -34,6 +34,8 @@ public class ObtainCarsFromJson {
 
         return carCollection;
     }
+
+
 
     @Test
     public void testGetCarCollection() throws IOException{
@@ -56,5 +58,6 @@ public class ObtainCarsFromJson {
         assertEquals(e, getCarList(f));
 
     }
+
 
 }

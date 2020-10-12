@@ -10,33 +10,50 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 
-import java.io.InputStream;
+import org.junit.Test;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.io.File;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     //private String[] mStrs = { "qq", "audi", "benz"};
      SearchView mySearchView;
      ListView myListView;
      ArrayAdapter adapter;
-     ArrayList CUS_LIST_TYPE;
+     ArrayList cars;
+     String path = "src/main/Resources/Json Files/carsDetails.json";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try {
+            cars =ObtainCarsFromJson.getCarList(new File(path));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mySearchView = (SearchView) findViewById(R.id.searchView);
         myListView = (ListView) findViewById(R.id.listView);
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,cars);
         myListView.setAdapter(adapter);
         myListView.setTextFilterEnabled(true);
         mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                if (list.equals(query)) {
+                if (cars.equals(query)) {
                     adapter.getFilter().filter(query);
                 } else {
                     Toast.makeText(MainActivity.this, "the car that you are looking for is not in the list", Toast.LENGTH_LONG).show();
@@ -55,4 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }}
+    }
+
+}

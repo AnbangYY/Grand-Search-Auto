@@ -1,5 +1,6 @@
 package com.example.a2100assignment;
 
+import android.media.session.MediaSession;
 import android.widget.Toast;
 
 import org.junit.Before;
@@ -21,7 +22,6 @@ public class QueryTokenizer implements Tokenizer{
 
     static final char whiteSpace[] = {' ', '\n', '\t'};
     static final char symbol[] = { ',', ';', '<', '>', '='};
-    static final char alphabet[] = {'a', 'b', 'c', 'd', };
     static final char divide = ',';
     static final char teminate = ';';
 
@@ -29,6 +29,7 @@ public class QueryTokenizer implements Tokenizer{
         this.text = text;
         pos = 0;
         nextToken();
+        currentToken();
     }
 
 
@@ -86,5 +87,20 @@ public class QueryTokenizer implements Tokenizer{
         return false;
     }
 
+    @Test
+    public void checkNext(){
+        text = "brand = BMW";
+        String a = (String)this.currentToken();
+        this.nextToken();
+        String b = (String)this.currentToken();
+        this.nextToken();
+        String c = (String)this.currentToken();
+        String x = "brand";
+        String y = "=";
+        String z = "BMW";
+        assertEquals(x,a);
+        assertEquals(y,b);
+        assertEquals(z,c);
+    }
 
 }

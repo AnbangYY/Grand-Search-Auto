@@ -12,11 +12,13 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 public class Car {
-    private double price;
-    private int seat;
-    private String brand;
-    private Color color;
-    private String name;
+    private int price;
+    private double speed;
+    private String manufacturer;
+    private String model;
+    private String type;
+    private String imgURL;
+
 
     /**
      * Create a uninitialized car.
@@ -27,48 +29,54 @@ public class Car {
     /**
      * Create a car
      *
-     * @param brand the brand of car
+     * @param manufacturer the brand of car
      * @param price the price of car
-     * @param seat  the number of seats in the car
+     * @param speed the maximum speed of car
      */
-    public Car(String name, String brand, double price, int seat, Color color) {
-        this.brand = brand;
+    public Car(String manufacturer, String model, double speed, int price, String type, String URL) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.speed = speed;
         this.price = price;
-        this.seat = seat;
-        this.color = color;
-        this.name = name;
+        this.type = type;
+        this.imgURL = URL;
     }
 
-    public String getName(){
-        return name;
+    public String getModel(){
+        return model;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public int getSeat() {
-        return seat;
+    public double getSpeed() {
+        return speed;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getManufacturer() {
+        return manufacturer;
     }
 
-    public String getColor(){
-        return color.name;
+    public String getType(){
+        return type;
     }
 
-    public void setPrice(double price) {
+    public String getImgURL(){
+        return imgURL;
+    }
+
+
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public void setSeat(int seat) {
-        this.seat = seat;
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setModel(String model) {
+        this.model = model;
     }
 
     /**
@@ -85,8 +93,8 @@ public class Car {
 
         if (o instanceof Car) {
             Car c = (Car) o;
-            return this.brand.equals(c.brand) && this.price == c.price
-                    && this.seat == c.seat && this.color == c.color;
+            return this.manufacturer.equals(c.manufacturer) && this.model.equals(c.model)
+                    && this.price == c.price && this.speed == c.speed;
         }
 
         return false;

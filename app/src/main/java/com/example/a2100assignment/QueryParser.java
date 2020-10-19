@@ -8,14 +8,14 @@ public class QueryParser {
 
 
 
-    public static BrandExp parseBrand(QueryTokenizer q){
-        BrandExp b = new BrandExp("");
+    public static ManufacturerExp parseBrand(QueryTokenizer q){
+        ManufacturerExp b = new ManufacturerExp("");
         while(q.hasNext()){
-            if(q.currentToken().toString().toLowerCase().equals("brand")){
+            if(q.currentToken().toString().toLowerCase().equals("manufacturer")){
                 q.nextToken();
                 if(q.currentToken().toString().equals("=") && q.hasNext()){
                     q.nextToken();
-                    b.brandName = (String)q.currentToken();
+                    b.manufacturerName = (String)q.currentToken();
                     break;
                 }
                 else {
@@ -29,14 +29,14 @@ public class QueryParser {
         return b;
     }
 
-    public static ColorExp parseColor(QueryTokenizer q){
-        ColorExp c = new ColorExp("");
+    public static ModelExp parseColor(QueryTokenizer q){
+        ModelExp c = new ModelExp("");
         while(q.hasNext()){
-            if(q.currentToken().toString().toLowerCase().equals("color")){
+            if(q.currentToken().toString().toLowerCase().equals("model")){
                 q.nextToken();
                 if(q.currentToken().toString().equals("=") && q.hasNext()){
                     q.nextToken();
-                    c.colorName = (String)q.currentToken();
+                    c.model= (String)q.currentToken();
                     break;
                 }
                 else {
@@ -49,8 +49,8 @@ public class QueryParser {
         return c;
     }
 
-    public static SeatExp parseSeat(QueryTokenizer q){
-        SeatExp s = new SeatExp(0, true);
+    public static SpeedExp parseSeat(QueryTokenizer q){
+        SpeedExp s = new SpeedExp(0, true);
         while(q.hasNext()){
             if(q.currentToken().toString().toLowerCase().equals("seat")){
                 q.nextToken();
@@ -59,7 +59,7 @@ public class QueryParser {
                     if((q.currentToken().toString().equals("<"))){
                         s.compare = false;
                     }
-                    s.seatNo = Integer.parseInt((String)q.currentToken());
+                    s.speed = Integer.parseInt((String)q.currentToken());
                     break;
                 }
                 else {
@@ -100,13 +100,6 @@ public class QueryParser {
     }
 
 
-
-
-    @Test
-    public void testParseBrand(){
-        QueryTokenizer n = new QueryTokenizer("Brand = BMW");
-        assertEquals("BMW",parseBrand(n).brandName);
-    }
 
 
 

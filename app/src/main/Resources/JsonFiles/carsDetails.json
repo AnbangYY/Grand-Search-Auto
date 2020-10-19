@@ -1,0 +1,44 @@
+[
+  { "name" : "Model X",
+    "brand" : "Tesla",
+    "price" : 138990.0,
+    "seat" : 5,
+    "color" : "red"
+  },
+
+  { "name" : "Mustang",
+    "brand" : "Ford",
+    "price" : 35630.0,
+    "seat" : 4,
+    "color" : "red"
+  },
+
+  { "name" : "Model 3",
+    "brand" : "Tesla",
+    "price" : 67900.0,
+    "seat" : 5,
+    "color" : "white"
+  },
+
+  { "name" : "F-Type",
+    "brand" : "Jaguar",
+    "price" : 61600.0,
+    "seat" : 4,
+    "color" : "blue"
+  },
+
+  { "name" : "Corolla",
+    "brand" : "Toyota",
+    "price" : 17490.0,
+    "seat" : 5,
+    "color" : "yellow"
+  },
+
+  { "name" : "Cullinan",
+    "brand" : "Rolls Royce",
+    "price" : 325000.0,
+    "seat" : 5,
+    "color" : "black"
+  }
+
+]

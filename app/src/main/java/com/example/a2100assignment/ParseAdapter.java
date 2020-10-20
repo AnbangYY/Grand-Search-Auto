@@ -5,6 +5,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,11 +18,13 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> {
+public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> implements Filterable {
 
 
     private ArrayList<Car> cars;
     private Context context;
+
+    private ArrayList<Car> org;
 
     public ParseAdapter(ArrayList<Car> cars, Context context){
         this.cars = cars;
@@ -50,6 +54,38 @@ public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> 
     @Override
     public int getItemCount() {
         return cars.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                final FilterResults oReturn = new FilterResults();
+                final ArrayList<Car> results = new ArrayList<Car>();
+                if(org == null){
+                    org = cars;
+                    if(constraint !=null){
+                        if(org!=null&org.size()>0){
+                            for(final Car c : org){
+                                if(c.getModel().toLowerCase().contains(constraint.toString())){
+                                    results.add(c);
+                                }
+                            }
+                        }
+                    }
+                    oReturn.values = results;
+                }
+                return oReturn;
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+
+                cars = (ArrayList<Car>)results.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

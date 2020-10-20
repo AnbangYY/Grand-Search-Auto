@@ -78,11 +78,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mySearchView = (SearchView) findViewById(R.id.searchView);
         myListView = (ListView) findViewById(R.id.listView);
-        ArrayList a = new ArrayList();
-        a.add("BMW");
-        a.add("Benz");
-        a.add("Jaguar");
-        a.add(carCollection.size());
+        
 
         try {
             adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, carname);
@@ -112,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                     myListView.setFilterText(newText);
                 } else {
                     myListView.clearTextFilter();
-                    System.out.println("dsflad");
+
                 }
                 return false;
             }

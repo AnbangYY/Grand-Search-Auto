@@ -11,7 +11,7 @@
     "price": 1718000,
     "speed": 118.9,
     "manufacturer": "Karin",
-    "model": "Sultan",
+    "model": "Sultan Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SultanClassic-GTAO-front.png.jpg"
   },
@@ -59,7 +59,7 @@
     "price": 897000,
     "speed": 121.4,
     "manufacturer": "Weeny",
-    "model": "Issi",
+    "model": "Issi Sport",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/IssiSport-GTAO-front.png.jpg"
   },
@@ -67,7 +67,7 @@
     "price": 905000,
     "speed": 131.1,
     "manufacturer": "Enus",
-    "model": "Paragon",
+    "model": "Paragon R",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ParagonR-GTAO-front.png.jpg"
   },
@@ -75,15 +75,15 @@
     "price": 718000,
     "speed": 123.0,
     "manufacturer": "Obey",
-    "model": "8F",
+    "model": "8F Drafter",
     "type": "sports",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/8FDrafter-GTAO-front.png.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/8FDrafter-GTAO-front1.png.jpg"
   },
   {
     "price": 1300000,
     "speed": 130.5,
     "manufacturer": "Benefactor",
-    "model": "Schlagen",
+    "model": "Schlagen GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SchlagenGT-GTAO-front.jpg.jpg"
   },
@@ -91,7 +91,7 @@
     "price": 1965000,
     "speed": 132.2,
     "manufacturer": "Grotti",
-    "model": "Itali",
+    "model": "Itali GTO",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ItaliGTO-GTAO-front.png.jpg"
   },
@@ -107,7 +107,7 @@
     "price": 790000,
     "speed": 127.9,
     "manufacturer": "Dinka",
-    "model": "Jester",
+    "model": "Jester Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/jester-classic1.jpg.jpg"
   },
@@ -115,7 +115,7 @@
     "price": 1675000,
     "speed": 124.6,
     "manufacturer": "Vapid",
-    "model": "Flash",
+    "model": "Flash GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FlashGT-GTAO-front.png.jpg"
   },
@@ -123,9 +123,9 @@
     "price": 830000,
     "speed": 130.4,
     "manufacturer": "Declasse",
-    "model": "Hotring",
+    "model": "Hotring Sabre",
     "type": "sports",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/hotring%20sabre1.png.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/hotring%20sabre2.png.jpg"
   },
   {
     "price": 940000,
@@ -163,7 +163,7 @@
     "price": 1145000,
     "speed": 129.2,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet SR",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/CometSR-GTAO-front.png.jpg"
   },
@@ -179,7 +179,7 @@
     "price": 650000,
     "speed": 114.8,
     "manufacturer": "Ubermacht",
-    "model": "Sentinel",
+    "model": "Sentinel Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SentinelClassic-GTAO-front.jpg.jpg"
   },
@@ -195,7 +195,7 @@
     "price": 710000,
     "speed": 124.6,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet Safari",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/comet%20safari.jpg.jpg"
   },
@@ -235,13 +235,14 @@
     "price": 816000,
     "speed": 124.6,
     "manufacturer": "Lampadati",
-    "model": "Tropos",
+    "model": "Tropos Rallye",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TroposRallye-GTAO-front.png.jpg"
   },
   {
     "price": 12000,
     "speed": 118.9,
+    "manufacturer": "NA",
     "model": "Sultan",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Sultan-GTAV-front.png.jpg"
@@ -250,7 +251,7 @@
     "price": 535000,
     "speed": 120.5,
     "manufacturer": "Bravado",
-    "model": "Sprunk",
+    "model": "Sprunk Buffalo",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SprunkBuffalo-GTAVPC-front.png.jpg"
   },
@@ -290,7 +291,7 @@
     "price": 116000,
     "speed": 123.0,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter V12",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/v12.jpg.jpg"
   },
@@ -298,7 +299,7 @@
     "price": 208000,
     "speed": 116.4,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter LWB",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SchafterLWB-GTAO-front.png.jpg"
   },
@@ -322,7 +323,7 @@
     "price": 132000,
     "speed": 124.6,
     "manufacturer": "Dewbauchee",
-    "model": "Rapid",
+    "model": "Rapid GT Cabrio",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RapidGT2-GTAV-front.png.jpg"
   },
@@ -330,7 +331,7 @@
     "price": 132000,
     "speed": 124.6,
     "manufacturer": "Dewbauchee",
-    "model": "Rapid",
+    "model": "Rapid GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RapidGT-GTAV-front.png.jpg"
   },
@@ -354,7 +355,7 @@
     "price": 385000,
     "speed": 128.1,
     "manufacturer": "Dewbauchee",
-    "model": "Massacro",
+    "model": "Massacro (Racecar)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/massaco%20racecar.png.jpg"
   },
@@ -378,7 +379,7 @@
     "price": 525000,
     "speed": 114.8,
     "manufacturer": "Karin",
-    "model": "Kuruma",
+    "model": "Kuruma (Armored)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ArmoredKuruma-GTAO-front.png.jpg"
   },
@@ -402,7 +403,7 @@
     "price": 350000,
     "speed": 129.6,
     "manufacturer": "Dinka",
-    "model": "Jester",
+    "model": "Jester (Racecar)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/jester%20racecar.png.jpg"
   },
@@ -418,13 +419,14 @@
     "price": 0,
     "speed": 108.2,
     "manufacturer": "Go",
-    "model": "Go",
+    "model": "Go Monkey Blista",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GoGoMonkeyBlista-GTAV-front.png.jpg"
   },
   {
     "price": 0,
     "speed": 110.7,
+    "manufacturer": "NA",
     "model": "Futo",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Futo-GTAV-front.png.jpg"
@@ -441,7 +443,7 @@
     "price": 448000,
     "speed": 124.6,
     "manufacturer": "Lampadati",
-    "model": "Furore",
+    "model": "Furore GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FuroreGT-GTAV-front.png.jpg"
   },
@@ -457,7 +459,7 @@
     "price": 904000,
     "speed": 121.4,
     "manufacturer": "Annis",
-    "model": "Elegy",
+    "model": "Elegy Retro Custom",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/elegy%20retro.jpg.jpg"
   },
@@ -465,7 +467,7 @@
     "price": 0,
     "speed": 124.6,
     "manufacturer": "Annis",
-    "model": "Elegy",
+    "model": "Elegy RH8",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/elegy%20rh8.jpg.jpg"
   },
@@ -473,7 +475,7 @@
     "price": 995000,
     "speed": 123.0,
     "manufacturer": "DeClasse",
-    "model": "Drift",
+    "model": "Drift Tampa",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DriftTampa-GTAO-front.png.jpg"
   },
@@ -489,7 +491,7 @@
     "price": 745000,
     "speed": 124.6,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet Retro Custom",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/CometRetroCustom-GTAO-front.png.jpg"
   },
@@ -505,7 +507,7 @@
     "price": 96000,
     "speed": 118.9,
     "manufacturer": "Bravado",
-    "model": "Buffalo",
+    "model": "Buffalo S",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BuffaloS-GTAV-front.png.jpg"
   },
@@ -521,7 +523,7 @@
     "price": 42000,
     "speed": 108.2,
     "manufacturer": "Dinka",
-    "model": "Blista",
+    "model": "Blista Compact",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BlistaCompact-GTAV-front.png.jpg"
   },
@@ -529,7 +531,7 @@
     "price": 610000,
     "speed": 127.1,
     "manufacturer": "Grotti",
-    "model": "Bestia",
+    "model": "Bestia GTS",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BestiaGTS-GTAO-front.png.jpg"
   },
@@ -545,7 +547,7 @@
     "price": 120000,
     "speed": 127.1,
     "manufacturer": "Obey",
-    "model": "9F",
+    "model": "9F Cabrio",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/9f%20cabrio.jpg.jpg"
   },
@@ -561,7 +563,7 @@
     "price": 580000,
     "speed": 114.8,
     "manufacturer": "Dinka",
-    "model": "Blista",
+    "model": "Blista Kanjo",
     "type": "compacts",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BlistaKanjo-GTAO-front.png.jpg"
   },
@@ -577,7 +579,7 @@
     "price": 1449000,
     "speed": 114.8,
     "manufacturer": "Weeny",
-    "model": "Issi",
+    "model": "Issi (Arena)",
     "type": "compacts",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ApocalypseIssi-GTAO-front.jpg.jpg"
   },
@@ -585,7 +587,7 @@
     "price": 360000,
     "speed": 102.5,
     "manufacturer": "Weeny",
-    "model": "Issi",
+    "model": "Issi Classic",
     "type": "compacts",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/IssiClassic-GTAO-front.png.jpg"
   },
@@ -593,7 +595,7 @@
     "price": 155000,
     "speed": 110.7,
     "manufacturer": "Grotti",
-    "model": "Brioso",
+    "model": "Brioso R/A",
     "type": "compacts",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Brioso%20RA.jpg.jpg"
   },
@@ -649,7 +651,7 @@
     "price": 65000,
     "speed": 118.9,
     "manufacturer": "Ubermacht",
-    "model": "Zion",
+    "model": "Zion Cabrio",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/zion%20cabrio.jpg.jpg"
   },
@@ -665,7 +667,7 @@
     "price": 900000,
     "speed": 123.0,
     "manufacturer": "Enus",
-    "model": "Windsor",
+    "model": "Windsor Drop",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/windsor%20drop.jpg.jpg"
   },
@@ -681,7 +683,7 @@
     "price": 60000,
     "speed": 116.4,
     "manufacturer": "Ubermacht",
-    "model": "Sentinel",
+    "model": "Sentinel XS",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/coupe.jpg.jpg"
   },
@@ -697,7 +699,7 @@
     "price": 82000,
     "speed": 123.0,
     "manufacturer": "Ubermacht",
-    "model": "Oracle",
+    "model": "Oracle XS",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/oracle%20xs.jpg.jpg"
   },
@@ -721,7 +723,7 @@
     "price": 95000,
     "speed": 118.9,
     "manufacturer": "Lampadati",
-    "model": "Felon",
+    "model": "Felon GT",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/felon%20gt.jpg.jpg"
   },
@@ -753,7 +755,7 @@
     "price": 185000,
     "speed": 118.9,
     "manufacturer": "Enus",
-    "model": "Cognoscenti",
+    "model": "Cognoscenti Cabrio",
     "type": "coupes",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/cognoscenti%20cabrio.jpg.jpg"
   },
@@ -761,7 +763,7 @@
     "price": 925000,
     "speed": 116.4,
     "manufacturer": "Western",
-    "model": "Rampant",
+    "model": "Rampant Rocket",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RampantRocket-GTAO-front.png.jpg"
   },
@@ -769,7 +771,7 @@
     "price": 1389000,
     "speed": 120.5,
     "manufacturer": "Western",
-    "model": "Motorcycle",
+    "model": "Motorcycle Company Deathbike",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ApocalypseDeathbike-GTAO-front.jpg.jpg"
   },
@@ -777,7 +779,7 @@
     "price": 3890250,
     "speed": 121.4,
     "manufacturer": "Pegassi",
-    "model": "Oppressor",
+    "model": "Oppressor Mk II",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/oppressor%20mkii%20flying-2.jpg.jpg"
   },
@@ -801,7 +803,7 @@
     "price": 122000,
     "speed": 112.3,
     "manufacturer": "Western",
-    "model": "Zombie",
+    "model": "Zombie Chopper",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ZombieChopper-GTAO-front.png.jpg"
   },
@@ -809,7 +811,7 @@
     "price": 99000,
     "speed": 112.3,
     "manufacturer": "Western",
-    "model": "Zombie",
+    "model": "Zombie Bobber",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ZombieBobber-GTAO-front.png.jpg"
   },
@@ -857,7 +859,7 @@
     "price": 120000,
     "speed": 110.7,
     "manufacturer": "Western",
-    "model": "Motorcycle",
+    "model": "Motorcycle Company Sovereign",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Sovereign-GTAV-front.png.jpg"
   },
@@ -873,7 +875,7 @@
     "price": 1995000,
     "speed": 118.1,
     "manufacturer": "Liberty",
-    "model": "City",
+    "model": "City Cycles Sanctus",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Sanctus-GTAO-front.png.jpg"
   },
@@ -889,7 +891,7 @@
     "price": 48000,
     "speed": 106.6,
     "manufacturer": "Western",
-    "model": "Rat",
+    "model": "Rat Bike",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/rat%20bike.jpg.jpg"
   },
@@ -897,7 +899,7 @@
     "price": 9000,
     "speed": 106.6,
     "manufacturer": "Shitzu",
-    "model": "PCJ",
+    "model": "PCJ 600",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/PCJ600-GTAV-front.png.jpg"
   },
@@ -953,7 +955,7 @@
     "price": 976000,
     "speed": 130.4,
     "manufacturer": "Shitzu",
-    "model": "Hakuchou",
+    "model": "Hakuchou Drag",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/hakuchou%20drag.jpg.jpg"
   },
@@ -977,7 +979,7 @@
     "price": 331000,
     "speed": 115.0,
     "manufacturer": "FCR",
-    "model": "1000",
+    "model": "1000 Custom",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FCR1000Custom-GTAO-front.png.jpg"
   },
@@ -993,7 +995,7 @@
     "price": 47500,
     "speed": 77.9,
     "manufacturer": "Principe",
-    "model": "Faggio",
+    "model": "Faggio Sport",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FaggioSport-GTAO-front.png.jpg"
   },
@@ -1001,7 +1003,7 @@
     "price": 55000,
     "speed": 73.8,
     "manufacturer": "Principe",
-    "model": "Faggio",
+    "model": "Faggio Mod",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FaggioMod-GTAO-front.png.jpg"
   },
@@ -1041,13 +1043,14 @@
     "price": 414000,
     "speed": 116.9,
     "manufacturer": "Principe",
-    "model": "Diabolus",
+    "model": "Diabolus Custom",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DiabolusCustom-GTAO-front.png.jpg"
   },
   {
     "price": 169000,
     "speed": 116.9,
+    "manufacturer": "NA",
     "model": "Diabolus",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Diabolus-GTAO-front.png.jpg"
@@ -1064,7 +1067,7 @@
     "price": 0,
     "speed": 110.7,
     "manufacturer": "Western",
-    "model": "Daemon",
+    "model": "Daemon (Lost)",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/originals/blank.jpg"
   },
@@ -1096,7 +1099,7 @@
     "price": 40000,
     "speed": 118.9,
     "manufacturer": "Nagasaki",
-    "model": "Carbon",
+    "model": "Carbon RS",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/carbon%20rs.jpg.jpg"
   },
@@ -1112,7 +1115,7 @@
     "price": 15000,
     "speed": 123.0,
     "manufacturer": "Pegassi",
-    "model": "Bati",
+    "model": "Bati 801",
     "type": "motorcycles",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/bati%20801rr.jpg.jpg"
   },
@@ -1144,7 +1147,7 @@
     "price": 1308000,
     "speed": 114.8,
     "manufacturer": "DeClasse",
-    "model": "Drift",
+    "model": "Drift Yosemite",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DriftYosemite-GTAO-front.png.jpg"
   },
@@ -1152,7 +1155,7 @@
     "price": 745000,
     "speed": 127.1,
     "manufacturer": "Bravado",
-    "model": "Gauntlet",
+    "model": "Gauntlet Hellfire",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GauntletHellfire-GTAO-front.png.jpg"
   },
@@ -1160,7 +1163,7 @@
     "price": 615000,
     "speed": 116.4,
     "manufacturer": "Bravado",
-    "model": "Gauntlet",
+    "model": "Gauntlet Classic",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GauntletClassic-GTAO-front.png.jpg"
   },
@@ -1216,7 +1219,7 @@
     "price": 1541335,
     "speed": 127.1,
     "manufacturer": "DeClasse",
-    "model": "Impaler",
+    "model": "Impaler (Arena)",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ApocalypseImpaler-GTAO-front.jpg.jpg"
   },
@@ -1224,7 +1227,7 @@
     "price": 1371375,
     "speed": 111.1,
     "manufacturer": "Vapid",
-    "model": "Slamvan",
+    "model": "Slamvan (Arena)",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ApocalypseSlamvan-GTAO-front.jpg.jpg"
   },
@@ -1232,7 +1235,7 @@
     "price": 1167000,
     "speed": 123.0,
     "manufacturer": "Vapid",
-    "model": "Dominator",
+    "model": "Dominator (Arena)",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ApocalypseDominator-GTAO-front.jpg.jpg"
   },
@@ -1240,7 +1243,7 @@
     "price": 725000,
     "speed": 119.3,
     "manufacturer": "Vapid",
-    "model": "Dominator",
+    "model": "Dominator GTX",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/dominator%20gtx.png.jpg"
   },
@@ -1250,13 +1253,13 @@
     "manufacturer": "Vapid",
     "model": "Ellie",
     "type": "muscle",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ellie3.png.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ellie1.png.jpg"
   },
   {
     "price": 505000,
     "speed": 114.8,
     "manufacturer": "Declasse",
-    "model": "Sabre",
+    "model": "Sabre Turbo Custom",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/sabre%20turbo%20custom.jpg.jpg"
   },
@@ -1264,7 +1267,7 @@
     "price": 2108050,
     "speed": 118.9,
     "manufacturer": "Declasse",
-    "model": "Weaponized",
+    "model": "Weaponized Tampa",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/WeaponizedTampa-GTAO-front.png.jpg"
   },
@@ -1272,7 +1275,7 @@
     "price": 277000,
     "speed": 118.1,
     "manufacturer": "DeClasse",
-    "model": "Burger",
+    "model": "Burger Shot Stallion",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BurgerShotStallion-GTAVPC-front.png.jpg"
   },
@@ -1280,7 +1283,7 @@
     "price": 335000,
     "speed": 114.8,
     "manufacturer": "Willard",
-    "model": "Faction",
+    "model": "Faction Custom",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FactionCustom-GTAO-front.png.jpg"
   },
@@ -1343,6 +1346,7 @@
   {
     "price": 5500,
     "speed": 106.6,
+    "manufacturer": "NA",
     "model": "Voodoo",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Voodoo-GTAV-front.png.jpg"
@@ -1351,7 +1355,7 @@
     "price": 405000,
     "speed": 109.9,
     "manufacturer": "Virgo",
-    "model": "Classic",
+    "model": "Classic Custom",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/VirgoClassicCustom-GTAO-front.png.jpg"
   },
@@ -1366,6 +1370,7 @@
   {
     "price": 195000,
     "speed": 109.9,
+    "manufacturer": "NA",
     "model": "Virgo",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Virgo-GTAV-front.png.jpg"
@@ -1390,7 +1395,7 @@
     "price": 464500,
     "speed": 110.7,
     "manufacturer": "Vapid",
-    "model": "Slamvan",
+    "model": "Slamvan Custom",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/slamvan%20custom.jpg.jpg"
   },
@@ -1406,7 +1411,7 @@
     "price": 15000,
     "speed": 114.8,
     "manufacturer": "Declasse",
-    "model": "Sabre",
+    "model": "Sabre Turbo",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/sabre%20turbo.jpg.jpg"
   },
@@ -1416,11 +1421,12 @@
     "manufacturer": "Ruiner",
     "model": "2000",
     "type": "muscle",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ruiner%202000.jpg.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ruiner%202000%20armed.jpg.jpg"
   },
   {
     "price": 0,
     "speed": 118.9,
+    "manufacturer": "NA",
     "model": "Ruiner",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ruiner.jpg.jpg"
@@ -1429,7 +1435,7 @@
     "price": 230000,
     "speed": 120.5,
     "manufacturer": "Bravado",
-    "model": "Redwood",
+    "model": "Redwood Gauntlet",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/redwood%20gauntlet.jpg.jpg"
   },
@@ -1453,7 +1459,7 @@
     "price": 315000,
     "speed": 120.5,
     "manufacturer": "Vapid",
-    "model": "Pisswasser",
+    "model": "Pisswasser Dominator",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/pisswasser%20dominator.jpg.jpg"
   },
@@ -1468,6 +1474,7 @@
   {
     "price": 0,
     "speed": 118.9,
+    "manufacturer": "NA",
     "model": "Phoenix",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/phoenix.jpg.jpg"
@@ -1491,6 +1498,7 @@
   {
     "price": 32500,
     "speed": 102.5,
+    "manufacturer": "NA",
     "model": "Moonbeam",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Moonbeam-GTAO-front.png.jpg"
@@ -1514,6 +1522,7 @@
   {
     "price": 90000,
     "speed": 114.8,
+    "manufacturer": "NA",
     "model": "Hotknife",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/hotknife.jpg.jpg"
@@ -1522,13 +1531,14 @@
     "price": 731000,
     "speed": 114.8,
     "manufacturer": "Faction",
-    "model": "Custom",
+    "model": "Custom Donk",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FactionCustomDonk-GTAO-front.png.jpg"
   },
   {
     "price": 36000,
     "speed": 114.8,
+    "manufacturer": "NA",
     "model": "Faction",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Faction-GTAO-front.png.jpg"
@@ -1545,7 +1555,7 @@
     "price": 665000,
     "speed": 124.6,
     "manufacturer": "Imponte",
-    "model": "Duke",
+    "model": "Duke O\u0027Death",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/duke%20o%20death.jpg.jpg"
   },
@@ -1561,7 +1571,7 @@
     "price": 695000,
     "speed": 123.8,
     "manufacturer": "Invetero",
-    "model": "Coquette",
+    "model": "Coquette BlackFin",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/blackfin.jpg.jpg"
   },
@@ -1585,7 +1595,7 @@
     "price": 399500,
     "speed": 119.7,
     "manufacturer": "Albany",
-    "model": "Buccaneer",
+    "model": "Buccaneer Custom",
     "type": "muscle",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BuccaneerCustom-GTAO-front.jpg.jpg"
   },
@@ -1641,7 +1651,7 @@
     "price": 875000,
     "speed": 113.2,
     "manufacturer": "Vapid",
-    "model": "Caracara",
+    "model": "Caracara 4x4",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Caracara4x4-GTAO-front.png.jpg"
   },
@@ -1697,7 +1707,7 @@
     "price": 742014,
     "speed": 90.2,
     "manufacturer": "Vapid",
-    "model": "The",
+    "model": "The Liberator",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Liberator-GTAV-front.png.jpg"
   },
@@ -1713,7 +1723,7 @@
     "price": 1489600,
     "speed": 106.6,
     "manufacturer": "Karin",
-    "model": "Technical",
+    "model": "Technical Aqua",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TechnicalAqua-GTAO-front.png.jpg"
   },
@@ -1729,7 +1739,7 @@
     "price": 38000,
     "speed": 106.6,
     "manufacturer": "Vapid",
-    "model": "Sandking",
+    "model": "Sandking SWB",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SandkingSWB-GTAV-front.png.jpg"
   },
@@ -1745,7 +1755,7 @@
     "price": 3000,
     "speed": 106.6,
     "manufacturer": "Karin",
-    "model": "Rebel",
+    "model": "Rebel (Rusty)",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RustyRebel-GTAV-front.png.jpg"
   },
@@ -1785,7 +1795,7 @@
     "price": 1092500,
     "speed": 106.6,
     "manufacturer": "Karin",
-    "model": "Technical",
+    "model": "Technical Custom",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TechnicalCustom-GTAO-front.png.jpg"
   },
@@ -1793,7 +1803,7 @@
     "price": 1552500,
     "speed": 106.6,
     "manufacturer": "HVY",
-    "model": "Insurgent",
+    "model": "Insurgent Pick-Up Custom",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/InsurgentPickupCustom-GTAO-front.png.jpg"
   },
@@ -1801,13 +1811,14 @@
     "price": 550000,
     "speed": 114.8,
     "manufacturer": "Vapid",
-    "model": "Trophy",
+    "model": "Trophy Truck",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/trophy%20truck.jpg.jpg"
   },
   {
     "price": 950000,
     "speed": 106.6,
+    "manufacturer": "NA",
     "model": "Technical",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Technical-GTAO-front.png.jpg"
@@ -1816,7 +1827,7 @@
     "price": 81000,
     "speed": 102.5,
     "manufacturer": "Nagasaki",
-    "model": "Street",
+    "model": "Street Blazer",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/StreetBlazer-GTAO-front.png.jpg"
   },
@@ -1824,7 +1835,7 @@
     "price": 0,
     "speed": 110.7,
     "manufacturer": "BF",
-    "model": "Space",
+    "model": "Space Docker",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SpaceDocker-GTAV-front.png.jpg"
   },
@@ -1832,7 +1843,7 @@
     "price": 45000,
     "speed": 106.6,
     "manufacturer": "Vapid",
-    "model": "Sandking",
+    "model": "Sandking XL",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SandkingXL-GTAV-front.png.jpg"
   },
@@ -1848,7 +1859,7 @@
     "price": 9000,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Rancher",
+    "model": "Rancher XL",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RancherXL-GTAV-front.png.jpg"
   },
@@ -1856,7 +1867,7 @@
     "price": 0,
     "speed": 123.0,
     "manufacturer": "Ramp",
-    "model": "Buggy",
+    "model": "Buggy (Spoiler)",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RampBuggy-GTAO-FrontQuarter.png.jpg"
   },
@@ -1912,7 +1923,7 @@
     "price": 69000,
     "speed": 98.4,
     "manufacturer": "Nagasaki",
-    "model": "Hot",
+    "model": "Hot Rod Blazer",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/HotRodBlazer-GTAV-front.png.jpg"
   },
@@ -1928,7 +1939,7 @@
     "price": 20000,
     "speed": 110.7,
     "manufacturer": "BF",
-    "model": "Dune",
+    "model": "Dune Buggy",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DuneBuggy-GTAV-front.png.jpg"
   },
@@ -1936,7 +1947,7 @@
     "price": 249000,
     "speed": 112.3,
     "manufacturer": "Benefactor",
-    "model": "Dubsta",
+    "model": "Dubsta 6x6",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Dubsta6x6-GTAV-front.png.jpg"
   },
@@ -1944,7 +1955,7 @@
     "price": 695000,
     "speed": 114.8,
     "manufacturer": "Vapid",
-    "model": "Desert",
+    "model": "Desert Raid",
     "type": "off-road",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DesertRaid-GTAO-front.png.jpg"
   },
@@ -2000,7 +2011,7 @@
     "price": 45000,
     "speed": 102.5,
     "manufacturer": "Chariot",
-    "model": "Romero",
+    "model": "Romero Hearse",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RomeroHearse-GTAV-front.png.jpg"
   },
@@ -2048,7 +2059,7 @@
     "price": 250000,
     "speed": 118.9,
     "manufacturer": "Enus",
-    "model": "Super",
+    "model": "Super Diamond",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SuperDiamond-GTAV-front.png.jpg"
   },
@@ -2080,7 +2091,7 @@
     "price": 325000,
     "speed": 123.0,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter V12 (Armored)",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/v12%20armored.jpg.jpg"
   },
@@ -2088,7 +2099,7 @@
     "price": 438000,
     "speed": 116.4,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter LWB (Armored)",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SchafterLWBArmored-GTAO-front.png.jpg"
   },
@@ -2167,6 +2178,7 @@
   {
     "price": 0,
     "speed": 98.4,
+    "manufacturer": "NA",
     "model": "Emperor",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Emperor-GTAV-front.png.jpg"
@@ -2175,7 +2187,7 @@
     "price": 396000,
     "speed": 118.9,
     "manufacturer": "Enus",
-    "model": "Cognoscenti",
+    "model": "Cognoscenti 55 (Armored)",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Cognoscenti55Armored-GTAO-front.png.jpg"
   },
@@ -2183,7 +2195,7 @@
     "price": 154000,
     "speed": 118.9,
     "manufacturer": "Enus",
-    "model": "Cognoscenti",
+    "model": "Cognoscenti 55",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Cognoscenti55-GTAO-front.png.jpg"
   },
@@ -2191,7 +2203,7 @@
     "price": 558000,
     "speed": 114.8,
     "manufacturer": "Enus",
-    "model": "Cognoscenti",
+    "model": "Cognoscenti (Armored)",
     "type": "sedans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/CognoscentiArmored-GTAO-front1.png.jpg"
   },
@@ -2231,7 +2243,7 @@
     "price": 1718000,
     "speed": 118.9,
     "manufacturer": "Karin",
-    "model": "Sultan",
+    "model": "Sultan Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SultanClassic-GTAO-front.png.jpg"
   },
@@ -2279,7 +2291,7 @@
     "price": 897000,
     "speed": 121.4,
     "manufacturer": "Weeny",
-    "model": "Issi",
+    "model": "Issi Sport",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/IssiSport-GTAO-front.png.jpg"
   },
@@ -2287,7 +2299,7 @@
     "price": 905000,
     "speed": 131.1,
     "manufacturer": "Enus",
-    "model": "Paragon",
+    "model": "Paragon R",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ParagonR-GTAO-front.png.jpg"
   },
@@ -2295,15 +2307,15 @@
     "price": 718000,
     "speed": 123.0,
     "manufacturer": "Obey",
-    "model": "8F",
+    "model": "8F Drafter",
     "type": "sports",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/8FDrafter-GTAO-front1.png.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/8FDrafter-GTAO-front.png.jpg"
   },
   {
     "price": 1300000,
     "speed": 130.5,
     "manufacturer": "Benefactor",
-    "model": "Schlagen",
+    "model": "Schlagen GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SchlagenGT-GTAO-front.jpg.jpg"
   },
@@ -2311,7 +2323,7 @@
     "price": 1965000,
     "speed": 132.2,
     "manufacturer": "Grotti",
-    "model": "Itali",
+    "model": "Itali GTO",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ItaliGTO-GTAO-front.png.jpg"
   },
@@ -2327,7 +2339,7 @@
     "price": 790000,
     "speed": 127.9,
     "manufacturer": "Dinka",
-    "model": "Jester",
+    "model": "Jester Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/jester-classic1.jpg.jpg"
   },
@@ -2335,7 +2347,7 @@
     "price": 1675000,
     "speed": 124.6,
     "manufacturer": "Vapid",
-    "model": "Flash",
+    "model": "Flash GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FlashGT-GTAO-front.png.jpg"
   },
@@ -2343,7 +2355,7 @@
     "price": 830000,
     "speed": 130.4,
     "manufacturer": "Declasse",
-    "model": "Hotring",
+    "model": "Hotring Sabre",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/hotring%20sabre1.png.jpg"
   },
@@ -2383,7 +2395,7 @@
     "price": 1145000,
     "speed": 129.2,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet SR",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/CometSR-GTAO-front.png.jpg"
   },
@@ -2399,7 +2411,7 @@
     "price": 650000,
     "speed": 114.8,
     "manufacturer": "Ubermacht",
-    "model": "Sentinel",
+    "model": "Sentinel Classic",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SentinelClassic-GTAO-front.jpg.jpg"
   },
@@ -2415,7 +2427,7 @@
     "price": 710000,
     "speed": 124.6,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet Safari",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/comet%20safari.jpg.jpg"
   },
@@ -2455,13 +2467,14 @@
     "price": 816000,
     "speed": 124.6,
     "manufacturer": "Lampadati",
-    "model": "Tropos",
+    "model": "Tropos Rallye",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TroposRallye-GTAO-front.png.jpg"
   },
   {
     "price": 12000,
     "speed": 118.9,
+    "manufacturer": "NA",
     "model": "Sultan",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Sultan-GTAV-front.png.jpg"
@@ -2470,7 +2483,7 @@
     "price": 535000,
     "speed": 120.5,
     "manufacturer": "Bravado",
-    "model": "Sprunk",
+    "model": "Sprunk Buffalo",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SprunkBuffalo-GTAVPC-front.png.jpg"
   },
@@ -2510,7 +2523,7 @@
     "price": 116000,
     "speed": 123.0,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter V12",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/v12.jpg.jpg"
   },
@@ -2518,7 +2531,7 @@
     "price": 208000,
     "speed": 116.4,
     "manufacturer": "Benefactor",
-    "model": "Schafter",
+    "model": "Schafter LWB",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SchafterLWB-GTAO-front.png.jpg"
   },
@@ -2542,7 +2555,7 @@
     "price": 132000,
     "speed": 124.6,
     "manufacturer": "Dewbauchee",
-    "model": "Rapid",
+    "model": "Rapid GT Cabrio",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RapidGT2-GTAV-front.png.jpg"
   },
@@ -2550,7 +2563,7 @@
     "price": 132000,
     "speed": 124.6,
     "manufacturer": "Dewbauchee",
-    "model": "Rapid",
+    "model": "Rapid GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RapidGT-GTAV-front.png.jpg"
   },
@@ -2574,7 +2587,7 @@
     "price": 385000,
     "speed": 128.1,
     "manufacturer": "Dewbauchee",
-    "model": "Massacro",
+    "model": "Massacro (Racecar)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/massaco%20racecar.png.jpg"
   },
@@ -2598,7 +2611,7 @@
     "price": 525000,
     "speed": 114.8,
     "manufacturer": "Karin",
-    "model": "Kuruma",
+    "model": "Kuruma (Armored)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ArmoredKuruma-GTAO-front.png.jpg"
   },
@@ -2622,7 +2635,7 @@
     "price": 350000,
     "speed": 129.6,
     "manufacturer": "Dinka",
-    "model": "Jester",
+    "model": "Jester (Racecar)",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/jester%20racecar.png.jpg"
   },
@@ -2638,13 +2651,14 @@
     "price": 0,
     "speed": 108.2,
     "manufacturer": "Go",
-    "model": "Go",
+    "model": "Go Monkey Blista",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GoGoMonkeyBlista-GTAV-front.png.jpg"
   },
   {
     "price": 0,
     "speed": 110.7,
+    "manufacturer": "NA",
     "model": "Futo",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Futo-GTAV-front.png.jpg"
@@ -2661,7 +2675,7 @@
     "price": 448000,
     "speed": 124.6,
     "manufacturer": "Lampadati",
-    "model": "Furore",
+    "model": "Furore GT",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/FuroreGT-GTAV-front.png.jpg"
   },
@@ -2677,7 +2691,7 @@
     "price": 904000,
     "speed": 121.4,
     "manufacturer": "Annis",
-    "model": "Elegy",
+    "model": "Elegy Retro Custom",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/elegy%20retro.jpg.jpg"
   },
@@ -2685,7 +2699,7 @@
     "price": 0,
     "speed": 124.6,
     "manufacturer": "Annis",
-    "model": "Elegy",
+    "model": "Elegy RH8",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/elegy%20rh8.jpg.jpg"
   },
@@ -2693,7 +2707,7 @@
     "price": 995000,
     "speed": 123.0,
     "manufacturer": "DeClasse",
-    "model": "Drift",
+    "model": "Drift Tampa",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DriftTampa-GTAO-front.png.jpg"
   },
@@ -2709,7 +2723,7 @@
     "price": 745000,
     "speed": 124.6,
     "manufacturer": "Pfister",
-    "model": "Comet",
+    "model": "Comet Retro Custom",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/CometRetroCustom-GTAO-front.png.jpg"
   },
@@ -2725,7 +2739,7 @@
     "price": 96000,
     "speed": 118.9,
     "manufacturer": "Bravado",
-    "model": "Buffalo",
+    "model": "Buffalo S",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BuffaloS-GTAV-front.png.jpg"
   },
@@ -2741,7 +2755,7 @@
     "price": 42000,
     "speed": 108.2,
     "manufacturer": "Dinka",
-    "model": "Blista",
+    "model": "Blista Compact",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BlistaCompact-GTAV-front.png.jpg"
   },
@@ -2749,7 +2763,7 @@
     "price": 610000,
     "speed": 127.1,
     "manufacturer": "Grotti",
-    "model": "Bestia",
+    "model": "Bestia GTS",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BestiaGTS-GTAO-front.png.jpg"
   },
@@ -2765,7 +2779,7 @@
     "price": 120000,
     "speed": 127.1,
     "manufacturer": "Obey",
-    "model": "9F",
+    "model": "9F Cabrio",
     "type": "sports",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/9f%20cabrio.jpg.jpg"
   },
@@ -2781,7 +2795,7 @@
     "price": 1470000,
     "speed": 123.0,
     "manufacturer": "Dewbauchee",
-    "model": "JB",
+    "model": "JB 700W",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/JB700W-GTAO-front.png.jpg"
   },
@@ -2789,7 +2803,7 @@
     "price": 1620000,
     "speed": 118.9,
     "manufacturer": "Vapid",
-    "model": "Retinue",
+    "model": "Retinue Mk II",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RetinueMkII-GTAO-front.png.jpg"
   },
@@ -2805,7 +2819,7 @@
     "price": 812000,
     "speed": 122.2,
     "manufacturer": "Ubermacht",
-    "model": "Zion",
+    "model": "Zion Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ZionClassic-GTAO-front.png.jpg"
   },
@@ -2813,7 +2827,7 @@
     "price": 797000,
     "speed": 113.2,
     "manufacturer": "Vulcar",
-    "model": "Nebula",
+    "model": "Nebula Turbo",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/NebulaTurbo-GTAO-front.png.jpg"
   },
@@ -2829,7 +2843,7 @@
     "price": 1225000,
     "speed": 114.8,
     "manufacturer": "Lampadati",
-    "model": "Michelli",
+    "model": "Michelli GT",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/MichelliGT-GTAO-front.png.jpg"
   },
@@ -2909,7 +2923,7 @@
     "price": 885000,
     "speed": 122.6,
     "manufacturer": "Dewbauchee",
-    "model": "Rapid",
+    "model": "Rapid GT Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/rapid%20gt%20classic.jpg.jpg"
   },
@@ -2933,7 +2947,7 @@
     "price": 865000,
     "speed": 124.6,
     "manufacturer": "Grotti",
-    "model": "Cheetah",
+    "model": "Cheetah Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/cheetah.jpg.jpg"
   },
@@ -2949,7 +2963,7 @@
     "price": 705000,
     "speed": 125.1,
     "manufacturer": "Grotti",
-    "model": "Turismo",
+    "model": "Turismo Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/turismo%20classic.jpg.jpg"
   },
@@ -2957,7 +2971,7 @@
     "price": 378000,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Tornado",
+    "model": "Tornado Rat Rod",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TornadoRatRod-GTAO-front.png.jpg"
   },
@@ -2965,7 +2979,7 @@
     "price": 0,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Tornado",
+    "model": "Tornado Mariachi",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Tornado4-GTAV-front.png.jpg"
   },
@@ -2973,7 +2987,7 @@
     "price": 405000,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Tornado",
+    "model": "Tornado Custom",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/TornadoCustomUp-GTAO-front.png.jpg"
   },
@@ -2981,7 +2995,7 @@
     "price": 0,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Tornado",
+    "model": "Tornado Cabrio",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Tornado2Down-GTAV-front.png.jpg"
   },
@@ -2997,7 +3011,7 @@
     "price": 975000,
     "speed": 113.2,
     "manufacturer": "Benefactor",
-    "model": "Stirling",
+    "model": "Stirling GT",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/sterling.jpg.jpg"
   },
@@ -3005,7 +3019,7 @@
     "price": 875000,
     "speed": 118.9,
     "manufacturer": "Grotti",
-    "model": "Stinger",
+    "model": "Stinger GT",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/stinger%20gt.jpg.jpg"
   },
@@ -3021,7 +3035,7 @@
     "price": 982000,
     "speed": 102.5,
     "manufacturer": "Albany",
-    "model": "Roosevelt",
+    "model": "Roosevelt Valor",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RooseveltValor-GTAO-front.png.jpg"
   },
@@ -3044,6 +3058,7 @@
   {
     "price": 0,
     "speed": 106.6,
+    "manufacturer": "NA",
     "model": "Peyote",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Peyote-GTAV-front.png.jpg"
@@ -3059,6 +3074,7 @@
   {
     "price": 0,
     "speed": 106.6,
+    "manufacturer": "NA",
     "model": "Manana",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Manana-GTAV-front.png.jpg"
@@ -3075,7 +3091,7 @@
     "price": 350000,
     "speed": 123.0,
     "manufacturer": "Dewbauchee",
-    "model": "JB",
+    "model": "JB 700",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/JB700-GTAV-front.png.jpg"
   },
@@ -3083,7 +3099,7 @@
     "price": 915000,
     "speed": 122.6,
     "manufacturer": "Pegassi",
-    "model": "Infernus",
+    "model": "Infernus Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/InfernusClassic-GTAO-front.png.jpg"
   },
@@ -3091,7 +3107,7 @@
     "price": 550000,
     "speed": 110.7,
     "manufacturer": "Albany",
-    "model": "Franken",
+    "model": "Franken Stange",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Fr?nkenStange-GTAV-front.png.jpg"
   },
@@ -3099,7 +3115,7 @@
     "price": 665000,
     "speed": 123.8,
     "manufacturer": "Invetero",
-    "model": "Coquette",
+    "model": "Coquette Classic",
     "type": "sports-classics",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/coquette%20classis.jpg.jpg"
   },
@@ -3155,7 +3171,7 @@
     "price": 1795000,
     "speed": 139.4,
     "manufacturer": "Principe",
-    "model": "Deveste",
+    "model": "Deveste Eight",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/DevesteEight.jpg.jpg"
   },
@@ -3195,7 +3211,7 @@
     "price": 2305000,
     "speed": 139.4,
     "manufacturer": "Overflod",
-    "model": "Entity",
+    "model": "Entity XXR",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/entity%20xxr.png.jpg"
   },
@@ -3203,7 +3219,7 @@
     "price": 565000,
     "speed": 123.0,
     "manufacturer": "Bravado",
-    "model": "Banshee",
+    "model": "Banshee 900R",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/banshee%20900.jpg.jpg"
   },
@@ -3261,7 +3277,7 @@
     "manufacturer": "Dewbauchee",
     "model": "Vagner",
     "type": "super",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/vagner.jpg.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/vagner3.png.jpg"
   },
   {
     "price": 725000,
@@ -3275,7 +3291,7 @@
     "price": 2700000,
     "speed": 132.0,
     "manufacturer": "Grotti",
-    "model": "X80",
+    "model": "X80 Proto",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/x80.jpg.jpg"
   },
@@ -3307,7 +3323,7 @@
     "price": 500000,
     "speed": 127.1,
     "manufacturer": "Grotti",
-    "model": "Turismo",
+    "model": "Turismo R",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/turismo%20r.jpg.jpg"
   },
@@ -3331,7 +3347,7 @@
     "price": 975000,
     "speed": 121.4,
     "manufacturer": "Karin",
-    "model": "Sultan",
+    "model": "Sultan RS",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/SultanRS-GTAO-front.png.jpg"
   },
@@ -3339,7 +3355,7 @@
     "price": 3830400,
     "speed": 118.9,
     "manufacturer": "Coil",
-    "model": "Rocket",
+    "model": "Rocket Voltic",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RocketVoltic-GTAO-front.png.jpg"
   },
@@ -3379,9 +3395,9 @@
     "price": 2045000,
     "speed": 131.4,
     "manufacturer": "Truffade",
-    "model": "Nero",
+    "model": "Nero Custom",
     "type": "super",
-    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/nero%20custom.jpg.jpg"
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/nero%20custom%203.jpg.jpg"
   },
   {
     "price": 1440000,
@@ -3395,7 +3411,7 @@
     "price": 1684000,
     "speed": 130.5,
     "manufacturer": "Itali",
-    "model": "GTB",
+    "model": "GTB Custom",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/itali%20gtb.jpg.jpg"
   },
@@ -3403,7 +3419,7 @@
     "price": 1189000,
     "speed": 130.4,
     "manufacturer": "Progen",
-    "model": "Itali",
+    "model": "Itali GTB",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ItaliGTB-GTAO-front.jpg.jpg"
   },
@@ -3443,7 +3459,7 @@
     "price": 795000,
     "speed": 127.1,
     "manufacturer": "Overflod",
-    "model": "Entity",
+    "model": "Entity XF",
     "type": "super",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/xf.jpg.jpg"
   },
@@ -3483,7 +3499,7 @@
     "price": 0,
     "speed": 106.6,
     "manufacturer": "Vapid",
-    "model": "Speedo",
+    "model": "Speedo Custom",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/speedo%20custom.jpg.jpg"
   },
@@ -3491,7 +3507,7 @@
     "price": 195000,
     "speed": 98.4,
     "manufacturer": "Bravado",
-    "model": "Youga",
+    "model": "Youga Classic",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/YougaClassic-GTAO-front.png.jpg"
   },
@@ -3531,7 +3547,7 @@
     "price": 130000,
     "speed": 106.6,
     "manufacturer": "Bravado",
-    "model": "Rumpo",
+    "model": "Rumpo Custom",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/RumpoCustom-GTAO-front.png.jpg"
   },
@@ -3563,7 +3579,7 @@
     "price": 360000,
     "speed": 102.5,
     "manufacturer": "Vapid",
-    "model": "Minivan",
+    "model": "Minivan Custom",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/MinivanCustom-GTAO-front.png.jpg"
   },
@@ -3578,6 +3594,7 @@
   {
     "price": 15000,
     "speed": 82.0,
+    "manufacturer": "NA",
     "model": "Journey",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Journey-GTAV-front.png.jpg"
@@ -3586,7 +3603,7 @@
     "price": 0,
     "speed": 106.6,
     "manufacturer": "DeClasse",
-    "model": "Gang",
+    "model": "Gang Burrito (Lost)",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GangBurrito-GTAV-front.png.jpg"
   },
@@ -3594,7 +3611,7 @@
     "price": 65000,
     "speed": 114.8,
     "manufacturer": "DeClasse",
-    "model": "Gang",
+    "model": "Gang Burrito",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/GangBurrito2-GTAO-front.png.jpg"
   },
@@ -3602,13 +3619,14 @@
     "price": 0,
     "speed": 106.6,
     "manufacturer": "Vapid",
-    "model": "Clown",
+    "model": "Clown Van",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/ClownVan-GTAV-front.png.jpg"
   },
   {
     "price": 0,
     "speed": 82.0,
+    "manufacturer": "NA",
     "model": "Camper",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Camper-GTAV-front.png.jpg"
@@ -3616,6 +3634,7 @@
   {
     "price": 0,
     "speed": 106.6,
+    "manufacturer": "NA",
     "model": "Burrito",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/Burrito3-GTAV-front.png.jpg"
@@ -3623,6 +3642,7 @@
   {
     "price": 0,
     "speed": 82.0,
+    "manufacturer": "NA",
     "model": "Boxville",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/LSDWPBoxville-GTAV-front.png.jpg"
@@ -3631,7 +3651,7 @@
     "price": 23000,
     "speed": 106.6,
     "manufacturer": "Vapid",
-    "model": "Bobcat",
+    "model": "Bobcat XL",
     "type": "vans",
     "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/BobcatXL-GTAV-front.png.jpg"
   },

@@ -78,13 +78,10 @@ public class SearchByNameActivity extends AppCompatActivity {
                 Boolean found = false;
                for(Car c : GTAcars){
                     if(c.getModel().toLowerCase().equals(query)){
-
-
                         GTAcars.clear();
                         GTAcars.add(c);
                         adapter.notifyDataSetChanged();
 
-//                        GTAcars.add(c);
                         Toast.makeText(SearchByNameActivity.this, "here's your car", Toast.LENGTH_LONG).show();
                         found = true;
                         break;
@@ -122,10 +119,6 @@ public class SearchByNameActivity extends AppCompatActivity {
             }
         });
 
-
-
-//        GetCars getCars =new GetCars();
-//        getCars.execute();
 
 
 

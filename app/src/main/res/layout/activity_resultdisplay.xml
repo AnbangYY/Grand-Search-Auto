@@ -3,8 +3,82 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context=".Activities.PresentCarActivity"
     android:layout_height="match_parent">
 
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="input"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="input"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="input"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="input"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Manufacturer:"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif-monospace"
+        android:text="Model:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_vehicle" />
 
     <ImageView
         android:id="@+id/imageView_carpic"
@@ -15,7 +89,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView_result"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon" />
+        app:srcCompat="@drawable/gta5" />
 
 
     <TextView
@@ -36,50 +110,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-        android:id="@+id/textView_result1"
-        android:layout_width="400dp"
-        android:layout_height="285dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
-        android:textColor="#070707"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_vehicle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_userguide"
-        app:layout_constraintVertical_bias="0.461" />
-
     <Button
         android:id="@+id/btn_back1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="235dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/transparent"
+        android:background="@color/color1"
+        android:textColor="@color/white"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.193"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_result1"
-        app:layout_constraintVertical_bias="0.865" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView_vehicle"
-        android:layout_width="279dp"
-        android:layout_height="155dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="150dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_back1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_userguide"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView_vehicleinfo"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -87,35 +143,104 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="235dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="20dp"
-        android:background="@android:color/transparent"
         android:text="See more"
-        android:textColor="#070707"
+        android:background="@color/color1"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toEndOf="@+id/btn_back1"
-        app:layout_constraintTop_toBottomOf="@+id/textView_result1"
-        app:layout_constraintVertical_bias="0.865" />
+        app:layout_constraintStart_toEndOf="@+id/btn_back1" />
 
     <TextView
         android:id="@+id/textView_vehicleinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginBottom="10dp"
         android:text="VEHICLE INFO"
         android:textColor="#070707"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView_result1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="input"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_vehicle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Manufacturer:"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="serif-monospace"
+        android:text="Maximum Speed:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Type:"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="Price:"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="380dp"
+        android:layout_height="90dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_border"
+        android:textSize="15dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back1"
+        app:layout_constraintStart_toStartOf="@+id/imageView_vehicle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

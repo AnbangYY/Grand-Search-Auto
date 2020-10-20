@@ -2,6 +2,7 @@ package com.example.a2100assignment;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.a2100assignment.Activities.PresentCarActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -35,7 +37,6 @@ public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> 
     @Override
     public ParseAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.parse_car, parent, false);
-
         return new ViewHolder(view);
     }
 
@@ -88,7 +89,7 @@ public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> 
         };
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView imageView;
         TextView textView1;
         TextView textView2;
@@ -102,9 +103,23 @@ public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> 
             textView2 = itemview.findViewById(R.id.manufacturer);
             textView3 = itemview.findViewById(R.id.speed);
             textView4 = itemview.findViewById(R.id.price);
+            itemview.setOnClickListener(this);
         }
 
 
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+            Car car = cars.get(position);
 
+            Intent intent = new Intent(context, PresentCarActivity.class);
+            intent.putExtra("model", car.getModel());
+            intent.putExtra("manufacturer", car.getManufacturer());
+            intent.putExtra("type", car.getType());
+            intent.putExtra("speed", car.getSpeed());
+            intent.putExtra("price", car.getPrice());
+            intent.putExtra("img", car.getImgURL());
+            context.startActivity(intent);
+        }
     }
 }

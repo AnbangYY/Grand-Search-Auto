@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         SearchView mySearchView;
         EditText searchBox;
         Button searchByName;
+        Button userguide;
 
         ArrayAdapter adapter;
 
@@ -51,12 +52,21 @@ public class MainActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
             searchByName = (Button)findViewById(R.id.searchByName);
-
+            userguide = (Button)findViewById(R.id.button_helps);
             searchByName.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
                     Intent intent = new Intent(MainActivity.this, SearchByNameActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+            userguide.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(MainActivity.this, userguideActivity.class);
                     startActivity(intent);
 
                 }

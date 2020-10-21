@@ -18,12 +18,21 @@ public class Car {
     private String model;
     private String type;
     private String imgURL;
+    private int originalPrice;
+    private boolean promotedItem = false;
 
 
     /**
      * Create a uninitialized car.
      */
-    public Car() {
+    public Car(String manufacturer, String model, double speed, int price, String type, String URL, boolean promotedItem) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.speed = speed;
+        this.price = price;
+        this.type = type;
+        this.imgURL = URL;
+        this.promotedItem = promotedItem;
     }
 
     /**
@@ -58,25 +67,26 @@ public class Car {
         return manufacturer;
     }
 
-    public String getType(){
+    public String getType() {
         return type;
     }
 
-    public String getImgURL(){
+    public String getImgURL() {
         return imgURL;
     }
 
-
-    public void setPrice(int price) {
-        this.price = price;
+    public boolean isPromotedItem() {
+        return this.promotedItem;
     }
 
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
+    public void setItPromoted(boolean promoted, double account) {
+        this.promotedItem = promoted;
+        if (promoted) {
+            this.originalPrice = this.price;
+            this.price = (int) account * this.price;
+        } else {
+            this.price = this.originalPrice;
+        }
     }
 
     /**

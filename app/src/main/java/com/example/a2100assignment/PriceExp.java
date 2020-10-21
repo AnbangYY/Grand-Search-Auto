@@ -1,6 +1,6 @@
 package com.example.a2100assignment;
 
-public class PriceExp {
+public class PriceExp extends Exp{
 
     public int price;
     public Boolean compare;

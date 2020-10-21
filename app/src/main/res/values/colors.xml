@@ -8,6 +8,9 @@
     <color name="DarkSlateGrey">#2F4F4F</color>
     <color name="LightSlateGrey">#778899</color>
     <color name="white">#FFFFFF</color>
+    <color name="light_grey">#7EA2A59A</color>
+
+    <color name="darkergrey">#A9AFAF</color>
 
     <color name="black">#000000</color>
 

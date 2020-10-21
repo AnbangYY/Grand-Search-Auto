@@ -1,6 +1,6 @@
 package com.example.a2100assignment;
 
-public class ManufacturerExp {
+public class ManufacturerExp extends Exp{
 
     public String manufacturerName;
 

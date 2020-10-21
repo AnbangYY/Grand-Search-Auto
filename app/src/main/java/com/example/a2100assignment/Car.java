@@ -9,9 +9,10 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Type;
+import java.util.Comparator;
 import java.util.List;
 
-public class Car {
+public class Car implements Comparable<Car> {
     private int price;
     private double speed;
     private String manufacturer;
@@ -139,4 +140,17 @@ public class Car {
         return gson.fromJson(jsonReader, CUS_LIST_TYPE);
     }
 
+
+    @Override
+    public int compareTo(Car o) {
+        if(this.getPrice()>o.getPrice()){
+            return 1;
+        }
+        else if (this.getPrice()==o.getPrice()){
+            return 0;
+        }
+        else {
+            return -1;
+        }
+    }
 }

@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
@@ -147,6 +148,45 @@ public class Car {
         }
 
         return gson.fromJson(jsonReader, CUS_LIST_TYPE);
+    }
+
+    /**
+     * This is a method that take two String and return if they are approximately to each other.
+     * Here, "approximately" means:
+     * - case insensitive
+     * - have same characters but with different order
+     * - have approximately 75% correctness.
+     *
+     * @param a the string to be compared
+     * @param b the string to be compared
+     * @return if these two string are approximately equal to each other.
+     */
+    public static boolean approximateEqual(String a, String b) {
+        if (a.equalsIgnoreCase(b)) {
+            return true;
+        } else {
+            ArrayList<Character> AErrors = new ArrayList<>();
+            ArrayList<Character> BErrors = new ArrayList<>();
+            for (int i = 0; i < a.length() && i < b.length(); i++) {
+                if (a.charAt(i) != b.charAt(i)) {
+                    AErrors.add(a.charAt(i));
+                    BErrors.add(b.charAt(i));
+                }
+
+            }
+            for (int i = 0; i < AErrors.size(); i++) {
+                for (int j = 0; j < BErrors.size(); j++) {
+                    if (AErrors.get(i) == BErrors.get(j)) {
+                        AErrors.remove(i);
+                        BErrors.remove(j);
+                    }
+                }
+            }
+            if (AErrors.size() <= (int) a.length()*0.75 || BErrors.size() <= (int) b.length()*0.75) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

@@ -28,7 +28,8 @@ public class Car implements Comparable<Car> {
     /**
      * Create a uninitialized car.
      */
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String manufacturer, String model, double speed, int price, String type, String URL, boolean promotedItem) {
         this.manufacturer = manufacturer;
@@ -44,8 +45,8 @@ public class Car implements Comparable<Car> {
      * Create a car
      *
      * @param manufacturer the brand of car
-     * @param price the price of car
-     * @param speed the maximum speed of car
+     * @param price        the price of car
+     * @param speed        the maximum speed of car
      */
     public Car(String manufacturer, String model, double speed, int price, String type, String URL) {
         this.manufacturer = manufacturer;
@@ -56,7 +57,7 @@ public class Car implements Comparable<Car> {
         this.imgURL = URL;
     }
 
-    public String getModel(){
+    public String getModel() {
         return model;
     }
 
@@ -84,9 +85,13 @@ public class Car implements Comparable<Car> {
         return this.promotedItem;
     }
 
-    public void showIt(boolean show) {this.show = show;}
+    public void showIt(boolean show) {
+        this.show = show;
+    }
 
-    public boolean showOrNot() {return this.show;}
+    public boolean showOrNot() {
+        return this.show;
+    }
 
     public void setItPromoted(boolean promoted, double account) {
         this.promotedItem = promoted;
@@ -164,16 +169,15 @@ public class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car o) {
-        if(this.getPrice()>o.getPrice()){
+        if (this.getPrice() > o.getPrice()) {
             return 1;
-        }
-        else if (this.getPrice()==o.getPrice()){
+        } else if (this.getPrice() == o.getPrice()) {
             return 0;
-        }
-        else {
+        } else {
             return -1;
         }
     }
+
     /**
      * This is a method that take two String and return if they are approximately to each other.
      * Here, "approximately" means:
@@ -181,36 +185,41 @@ public class Car implements Comparable<Car> {
      * - have same characters but with different order
      * - have approximately 75% correctness.
      *
+     *
+     * currently not working well.
+     *
      * @param a the string to be compared
      * @param b the string to be compared
      * @return if these two string are approximately equal to each other.
      */
-    public static boolean approximateEqual(String a, String b) {
-        if (a.equalsIgnoreCase(b)) {
-            return true;
-        } else {
-            ArrayList<Character> AErrors = new ArrayList<>();
-            ArrayList<Character> BErrors = new ArrayList<>();
-            for (int i = 0; i < a.length() && i < b.length(); i++) {
-                if (a.charAt(i) != b.charAt(i)) {
-                    AErrors.add(a.charAt(i));
-                    BErrors.add(b.charAt(i));
-                }
-
-            }
-            for (int i = 0; i < AErrors.size(); i++) {
-                for (int j = 0; j < BErrors.size(); j++) {
-                    if (AErrors.get(i) == BErrors.get(j)) {
-                        AErrors.remove(i);
-                        BErrors.remove(j);
-                    }
-                }
-            }
-            if (AErrors.size() <= (int) a.length()*0.75 || BErrors.size() <= (int) b.length()*0.75) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public static boolean approximateEqual(String a, String b) {
+//        if (a.equalsIgnoreCase(b)) {
+//            return true;
+//        } else if (a.length() - b.length() > 5) {
+//            return false;
+//        } else {
+//            ArrayList<Character> AErrors = new ArrayList<>();
+//            ArrayList<Character> BErrors = new ArrayList<>();
+//            for (int i = 0; i < a.length() && i < b.length(); i++) {
+//                if (a.charAt(i) != b.charAt(i)) {
+//                    AErrors.add(a.charAt(i));
+//                    BErrors.add(b.charAt(i));
+//                }
+//
+//            }
+//            for (int i = 0; i < AErrors.size(); i++) {
+//                for (int j = 0; j < BErrors.size(); j++) {
+//                    if (AErrors.get(i) == BErrors.get(j)) {
+//                        AErrors.remove(i);
+//                        BErrors.remove(j);
+//                    }
+//                }
+//            }
+//            if (AErrors.size() <= (int) b.length() * 0.75 || BErrors.size() <= (int) a.length() * 0.75) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
 }

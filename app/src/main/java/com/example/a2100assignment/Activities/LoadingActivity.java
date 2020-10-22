@@ -5,14 +5,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-import com.example.a2100assignment.Car;
 import com.example.a2100assignment.R;
-
-import java.util.ArrayList;
 
 public class LoadingActivity extends MainActivity {
     private static int TIME_OUT = 2000; //Time to launch the another activity
-    private ArrayList<Car> promoted = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

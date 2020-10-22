@@ -27,8 +27,6 @@ public class PresentCarActivity extends AppCompatActivity {
     private String detail = "\"The SR was made for only one thing: to make every other sports car look like it's the asthmatic kid in gym. Now get in line.\"";
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +35,7 @@ public class PresentCarActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.imageView_vehicle);
         model = findViewById(R.id.textView3);
-        manufacturer=findViewById(R.id.textView16);
+        manufacturer = findViewById(R.id.textView16);
         speed = findViewById(R.id.textView17);
         type = findViewById(R.id.textView18);
         price = findViewById(R.id.textView19);
@@ -50,18 +48,19 @@ public class PresentCarActivity extends AppCompatActivity {
         manufacturer.setText(getIntent().getStringExtra("manufacturer"));
         speed.setText(getIntent().getStringExtra("speed") + " mph");
         type.setText(getIntent().getStringExtra("type"));
-        price.setText("$"+getIntent().getStringExtra("price"));
+        price.setText("$" + getIntent().getStringExtra("price"));
         Picasso.get().load(getIntent().getStringExtra("img")).into(imageView);
 
-        if(getIntent().getStringExtra("model").equals("Oppressor Mk II")){
+        if (getIntent().getStringExtra("model").equals("Oppressor Mk II")) {
             description.setText("Extravagant and unpractical, often favored by idiots");
-        }else{
-        description.setText(detail.replace("SR", getIntent().getStringExtra("model")).replace("sports", getIntent().getStringExtra("type")));}
+        } else {
+            description.setText(detail.replace("SR", getIntent().getStringExtra("model")).replace("sports", getIntent().getStringExtra("type")));
+        }
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PresentCarActivity.this,MainActivity.class);
+                Intent i = new Intent(PresentCarActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
@@ -72,8 +71,6 @@ public class PresentCarActivity extends AppCompatActivity {
 //                Intent recommended = new Intent()
 //            }
 //        });
-
-
 
 
     }

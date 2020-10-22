@@ -1,0 +1,35 @@
+[
+  {
+    "price": 5,
+    "speed": 138990.0,
+    "manufacturer": "Model X",
+    "model": "Tesla",
+    "type": "Jeep",
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg",
+    "originalPrice": 0,
+    "show": false,
+    "promotedItem": false
+  },
+  {
+    "price": 5,
+    "speed": 138990.0,
+    "manufacturer": "Model X",
+    "model": "Tesla",
+    "type": "Jeep",
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg",
+    "originalPrice": 0,
+    "show": false,
+    "promotedItem": true
+  },
+  {
+    "price": 5,
+    "speed": 138990.0,
+    "manufacturer": "Model X",
+    "model": "Tesla",
+    "type": "Jeep",
+    "imgURL": "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg",
+    "originalPrice": 0,
+    "show": false,
+    "promotedItem": false
+  }
+]

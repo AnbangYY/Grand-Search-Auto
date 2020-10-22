@@ -21,12 +21,15 @@ public class Car implements Comparable<Car> {
     private String type;
     private String imgURL;
     private int originalPrice;
+    private boolean show;
     private boolean promotedItem = false;
 
 
     /**
      * Create a uninitialized car.
      */
+    public Car() {}
+
     public Car(String manufacturer, String model, double speed, int price, String type, String URL, boolean promotedItem) {
         this.manufacturer = manufacturer;
         this.model = model;
@@ -81,6 +84,10 @@ public class Car implements Comparable<Car> {
         return this.promotedItem;
     }
 
+    public void showIt(boolean show) {this.show = show;}
+
+    public boolean showOrNot() {return this.show;}
+
     public void setItPromoted(boolean promoted, double account) {
         this.promotedItem = promoted;
         if (promoted) {
@@ -118,9 +125,11 @@ public class Car implements Comparable<Car> {
      * @param cars a list of cars
      * @param file the path to a file
      */
-    public void saveToJSON(List<Car> cars, File file) {
+    public static void savePromotedToJSON(List<Car> cars, File file) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
+        for (int i = 0; i < cars.size(); i++) {
+            if (!cars.get(i).isPromotedItem()) cars.remove(i);
+        }
         try (FileWriter fw = new FileWriter(file)) {
             gson.toJson(cars, fw);
         } catch (Exception e) {

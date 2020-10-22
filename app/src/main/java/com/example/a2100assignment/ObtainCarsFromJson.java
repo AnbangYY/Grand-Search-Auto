@@ -43,31 +43,42 @@ public class ObtainCarsFromJson {
         assertEquals(a, b);
  }
 
-//    @Test
-//    public void testGetCarCollection2() throws IOException {
-//        ArrayList e = new ArrayList();
-//        Car modelx = new Car("Model X", "Tesla", 138990.0, 5, "RED");
-//        Car mustang = new Car("Mustang", "Ford", 35630.0, 4, "RED");
-//        Car model3 = new Car("Model 3", "Tesla", 67900.0, 5, "WHITE");
-//        Car ftype = new Car("F-Type", "Jaguar", 61600.0, 4, "BLUE");
-//        Car corolla = new Car("Corolla", "Toyota", 17490.0, 5, "YELLOW");
-//        Car cullinan = new Car("Cullinan", "Rolls Royce", 325000.0, 5, "BLACK");
+    @Test
+    public void testGetCarCollection2() throws IOException {
+        ArrayList g = new ArrayList();
+//        public Car(String manufacturer, String model, double speed, int price, String type, String URL, boolean promotedItem) {
+        Car a = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car b = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car c = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg", true);
+        Car d = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car e = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car f = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+
+        g.add(a);
+        g.add(b);
+        g.add(c);
+        g.add(d);
+        g.add(e);
+        g.add(f);
+
+        File h = new File("src\\main\\assets\\PromotedCars.json");
+        Car.savePromotedToJSON(g, h);
 //        e.add(modelx.getName());
 //        e.add(mustang.getName());
 //        e.add(model3.getName());
 //        e.add(ftype.getName());
 //        e.add(corolla.getName());
 //        e.add(cullinan.getName());
-//
-//        File f = new File("C:\\Users\\75564\\AndroidStudioProjects\\2100Assignment\\app\\src\\main\\Resources\\JsonFiles\\carsDetails.json");
+
+//        File f = new File("C:\\Users\\75564\\AndroidStudioProjects\\2100Assignment\\app\\src\\main\\Resources\\JsonFiles\\PromotedCars.json");
 //        ArrayList re = new ArrayList();
-//
+
 //        for (Car c:getCarList(f)
 //             ) {
 //            re.add(c.getName());
 //        }
-//
-//
+
+
 //        assertEquals(e, re);
-//    }
+    }
 }

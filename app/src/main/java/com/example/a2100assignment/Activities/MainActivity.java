@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             smartSearch.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     Intent intent =  new Intent(MainActivity.this, SmartSearchActivity.class);
                     startActivity(intent);
                 }

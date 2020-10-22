@@ -206,6 +206,15 @@ public class SmartSearchActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), m.manufacturerName+" "+t.type +" "+ Integer.valueOf(p.price)+" "+Double.valueOf(s.speed),Toast.LENGTH_SHORT).show();
 
 
+                if(TextUtils.isEmpty(query)) {
+                    picView.setVisibility(View.VISIBLE);
+                    t21.setVisibility(View.VISIBLE);
+                    t22.setVisibility(View.VISIBLE);
+                    t23.setVisibility(View.VISIBLE);
+                    t24.setVisibility(View.VISIBLE);
+                    t25.setVisibility(View.VISIBLE);
+                    t26.setVisibility(View.VISIBLE);
+                }
 
                 adapter.notifyDataSetChanged();
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -54,7 +55,7 @@ public class SearchByNameActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        subs = GTAcars;
+        subs = new ArrayList<>(GTAcars);
 
 
 
@@ -73,6 +74,7 @@ public class SearchByNameActivity extends AppCompatActivity {
         mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+
                 ArrayList<Car> emptyList =new ArrayList<>();
 
                 Boolean found = false;
@@ -91,6 +93,11 @@ public class SearchByNameActivity extends AppCompatActivity {
 
                if(!found){
                    Toast.makeText(SearchByNameActivity.this, "there is no such car", Toast.LENGTH_LONG).show();
+               }
+
+               if(TextUtils.isEmpty(query)){
+                   GTAcars = subs;
+                   adapter.notifyDataSetChanged();
                }
 
                 return true;
@@ -115,6 +122,8 @@ public class SearchByNameActivity extends AppCompatActivity {
             @Override
             public boolean onClose() {
                 Toast.makeText(SearchByNameActivity.this, "bye", Toast.LENGTH_LONG).show();
+                Intent i =new Intent(SearchByNameActivity.this,MainActivity.class);
+                startActivity(i);
                 return true;
             }
         });

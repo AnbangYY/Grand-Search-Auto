@@ -116,8 +116,8 @@ public class ParseAdapter extends RecyclerView.Adapter<ParseAdapter.ViewHolder> 
             intent.putExtra("model", car.getModel());
             intent.putExtra("manufacturer", car.getManufacturer());
             intent.putExtra("type", car.getType());
-            intent.putExtra("speed", car.getSpeed());
-            intent.putExtra("price", car.getPrice());
+            intent.putExtra("speed", Double.valueOf(car.getSpeed()).toString());
+            intent.putExtra("price", Double.valueOf(car.getPrice()).toString());
             intent.putExtra("img", car.getImgURL());
             context.startActivity(intent);
         }

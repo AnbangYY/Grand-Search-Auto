@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -26,6 +27,7 @@ import com.example.a2100assignment.QueryTokenizer;
 import com.example.a2100assignment.R;
 import com.example.a2100assignment.SpeedExp;
 import com.example.a2100assignment.TypeExp;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
@@ -223,4 +225,9 @@ public class SmartSearchActivity extends AppCompatActivity {
         });
 }
 
+    public void Logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+        finish();
+    }
 }

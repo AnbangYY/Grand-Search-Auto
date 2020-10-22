@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "215726246699",
+    "firebase_url": "https://assignment-cafed.firebaseio.com",
+    "project_id": "assignment-cafed",
+    "storage_bucket": "assignment-cafed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215726246699:android:1dfb6435f8c1e4addb536e",
+        "android_client_info": {
+          "package_name": "com.example.a2100assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215726246699-eucjub4u4kpbfffri3bqnnlb0vo7bl1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a2100assignment",
+            "certificate_hash": "dea2e7eab9ac2fe36ccd0e90f19a9ad10c6517df"
+          }
+        },
+        {
+          "client_id": "215726246699-143nvb2fsmjfbrm0qfqk9pgugaetumkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbZVUwXgOm_Y8aGB9UxDWSXFZBjaJgBes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215726246699-143nvb2fsmjfbrm0qfqk9pgugaetumkn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

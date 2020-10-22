@@ -32,7 +32,7 @@ public class SearchByNameActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ParseAdapter adapter;
     private ArrayList<Car> GTAcars = new ArrayList<>();
-    private ArrayList<Car> subs ;
+    private ArrayList<Car> subs;
     private ProgressBar progressBar;
     SearchView mySearchView;
 
@@ -58,7 +58,6 @@ public class SearchByNameActivity extends AppCompatActivity {
         subs = new ArrayList<>(GTAcars);
 
 
-
         progressBar = findViewById(R.id.progressBar);
 
         recyclerView = findViewById(R.id.recyclerView);
@@ -75,11 +74,12 @@ public class SearchByNameActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
 
-                ArrayList<Car> emptyList =new ArrayList<>();
+                ArrayList<Car> emptyList = new ArrayList<>();
 
                 Boolean found = false;
-               for(Car c : GTAcars){
-                    if(c.getModel().toLowerCase().equals(query)){
+                for (Car c : GTAcars) {
+//                    if(Car.approximateEqual(c.getModel(), query)){
+                    if (c.getModel().contentEquals(query) || c.getModel().equalsIgnoreCase(query)) {
                         GTAcars.clear();
                         GTAcars.add(c);
                         adapter.notifyDataSetChanged();
@@ -89,16 +89,16 @@ public class SearchByNameActivity extends AppCompatActivity {
                         break;
 
                     }
-               }
+                }
 
-               if(!found){
-                   Toast.makeText(SearchByNameActivity.this, "there is no such car", Toast.LENGTH_LONG).show();
-               }
+                if (!found) {
+                    Toast.makeText(SearchByNameActivity.this, "there is no such car", Toast.LENGTH_LONG).show();
+                }
 
-               if(TextUtils.isEmpty(query)){
-                   GTAcars = subs;
-                   adapter.notifyDataSetChanged();
-               }
+                if (TextUtils.isEmpty(query)) {
+                    GTAcars = subs;
+                    adapter.notifyDataSetChanged();
+                }
 
                 return true;
             }
@@ -106,7 +106,7 @@ public class SearchByNameActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
 
-                if(TextUtils.isEmpty(newText)){
+                if (TextUtils.isEmpty(newText)) {
 
                     GTAcars = new ArrayList<>(subs);
                     adapter = new ParseAdapter(GTAcars, SearchByNameActivity.this);
@@ -122,24 +122,19 @@ public class SearchByNameActivity extends AppCompatActivity {
             @Override
             public boolean onClose() {
                 Toast.makeText(SearchByNameActivity.this, "bye", Toast.LENGTH_LONG).show();
-                Intent i =new Intent(SearchByNameActivity.this,MainActivity.class);
+                Intent i = new Intent(SearchByNameActivity.this, MainActivity.class);
                 startActivity(i);
                 return true;
             }
         });
 
 
-
-
-
-
-
     }
 
-    private class GetCarNames extends AsyncTask<Void, Void, Void>{
+    private class GetCarNames extends AsyncTask<Void, Void, Void> {
 
         @Override
-        protected Void doInBackground(Void...voids) {
+        protected Void doInBackground(Void... voids) {
 
 //            for (Car c:GTAcars
 //                 ) {
@@ -148,9 +143,11 @@ public class SearchByNameActivity extends AppCompatActivity {
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
-                   try{ Thread.sleep(5000);}catch (Exception e){
-                       e.printStackTrace();
-                   }
+                    try {
+                        Thread.sleep(5000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             });
 
@@ -161,7 +158,7 @@ public class SearchByNameActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             progressBar.setVisibility(View.VISIBLE);
-            progressBar.startAnimation(AnimationUtils.loadAnimation(SearchByNameActivity.this,android.R.anim.fade_in));
+            progressBar.startAnimation(AnimationUtils.loadAnimation(SearchByNameActivity.this, android.R.anim.fade_in));
         }
 
         @Override
@@ -172,7 +169,7 @@ public class SearchByNameActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void avoid) {
             progressBar.setVisibility(View.GONE);
-            progressBar.startAnimation(AnimationUtils.loadAnimation(SearchByNameActivity.this,android.R.anim.fade_out));
+            progressBar.startAnimation(AnimationUtils.loadAnimation(SearchByNameActivity.this, android.R.anim.fade_out));
         }
 
 

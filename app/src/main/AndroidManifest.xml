@@ -13,17 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.UserguideActivity"></activity>
+        <activity android:name=".Activities.RegisterActivity"></activity>
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.UserguideActivity" />
         <activity android:name=".Activities.userguideActivity" />
-
         <activity android:name=".Activities.LoadingActivity">
             <intent-filter>
-
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Activities.PresentCarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
@@ -37,6 +35,7 @@
         <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

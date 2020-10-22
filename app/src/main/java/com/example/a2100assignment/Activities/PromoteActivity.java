@@ -52,14 +52,27 @@ public class PromoteActivity extends AppCompatActivity {
 
         imageView = findViewById(R.id.imageView_promote);
         Picasso.get().load(show.getImgURL()).into(imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent car = new Intent(PromoteActivity.this, PresentCarActivity.class);
+                car.putExtra("model", show.getModel());
+                car.putExtra("manufacturer", show.getManufacturer());
+                car.putExtra("speed", show.getSpeed());
+                car.putExtra("price", show.getPrice());
+                car.putExtra("img", show.getImgURL());
 
+                startActivity(car);
+                finish();
+            }
+        });
 
         // display it for 4 seconds.
         final View myLayout = findViewById(R.id.promoteCar);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(PromoteActivity.this, LoadingActivity.class);
+                Intent i = new Intent(PromoteActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }

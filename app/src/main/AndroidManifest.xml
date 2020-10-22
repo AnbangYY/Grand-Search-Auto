@@ -9,26 +9,31 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/gta5"
-        android:label="Four Wheel O'Clock"
+        android:label="carSearcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.UserguideActivity" />
+        <activity android:name=".Activities.ActivityWeb">
 
+        </activity>
+        <activity android:name=".Activities.UserguideActivity" />
         <activity android:name=".Activities.LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Activities.PromoteActivity">
-<!--                        <intent-filter>-->
-<!--                            <action android:name="android.intent.action.MAIN" />-->
-<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                        </intent-filter>-->
+        <activity android:name=".Activities.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
         </activity>
-
+        <activity android:name=".Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Activities.PresentCarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
@@ -49,6 +54,8 @@
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

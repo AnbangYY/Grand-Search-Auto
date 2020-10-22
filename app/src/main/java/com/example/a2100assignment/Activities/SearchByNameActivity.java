@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import com.example.a2100assignment.Car;
 import com.example.a2100assignment.ParseAdapter;
 import com.example.a2100assignment.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
@@ -26,6 +28,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SearchByNameActivity extends AppCompatActivity {
 
@@ -34,6 +37,7 @@ public class SearchByNameActivity extends AppCompatActivity {
     private ArrayList<Car> GTAcars = new ArrayList<>();
     private ArrayList<Car> subs;
     private ProgressBar progressBar;
+    private FloatingActionButton sortB;
     SearchView mySearchView;
 
 
@@ -57,6 +61,7 @@ public class SearchByNameActivity extends AppCompatActivity {
 
         subs = new ArrayList<>(GTAcars);
 
+        sortB = (FloatingActionButton)findViewById(R.id.floatingActionButton);
 
         progressBar = findViewById(R.id.progressBar);
 
@@ -128,18 +133,23 @@ public class SearchByNameActivity extends AppCompatActivity {
             }
         });
 
+        sortB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Collections.reverse(GTAcars);
+                adapter.notifyDataSetChanged();
+            }
+        });
 
     }
+
+
 
     private class GetCarNames extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... voids) {
 
-//            for (Car c:GTAcars
-//                 ) {
-//                names.add(c.getModel());
-//            }
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -171,7 +181,14 @@ public class SearchByNameActivity extends AppCompatActivity {
             progressBar.setVisibility(View.GONE);
             progressBar.startAnimation(AnimationUtils.loadAnimation(SearchByNameActivity.this, android.R.anim.fade_out));
         }
+    }
 
 
+    public ArrayList<Car> reverseCar(ArrayList<Car> c){
+        ArrayList<Car> result = new ArrayList<>();
+        for(int i = c.size()-1; i>0; i--){
+            result.add(c.get(i));
+        }
+        return result;
     }
 }

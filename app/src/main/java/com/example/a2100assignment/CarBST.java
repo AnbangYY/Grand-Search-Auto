@@ -17,6 +17,7 @@ public class CarBST<T extends Comparable<T>> {
 
     Node<T> root;
     ArrayList<T> sorted = new ArrayList<>();
+    ArrayList<T> inverseSorted = new ArrayList<>();
 
     public CarBST() {
         root = null;
@@ -56,32 +57,34 @@ public class CarBST<T extends Comparable<T>> {
         // 1 + Math.max(depth(node.getLeft()), depth(node.getRight()));
     }
     public ArrayList<T> smallToBig(){
-        return smallToBig(root);
+        smallToBig(root);return sorted;
     }
 
 
 
-    public ArrayList<T> smallToBig(Node<T> node){
+    public void smallToBig(Node<T> node){
+
         if(node!=null){
             smallToBig(node.getLeft());
             sorted.add((node.getData()));
             smallToBig(node.getRight());
 
         }
-        return sorted;
     }
+
 
     public ArrayList<T> bigToSmall() {
-        return bigToSmall(root);
+
+     bigToSmall(root);
+     return inverseSorted;
     }
 
-    public ArrayList<T> bigToSmall(Node<T> node){
+    public void bigToSmall(Node<T> node){
         if(node!=null){
             bigToSmall(node.getRight());
-            sorted.add((node.getData()));
+            inverseSorted.add((node.getData()));
             bigToSmall(node.getLeft());
         }
-        return sorted;
     }
 
     public Node<T> insert(T data) {

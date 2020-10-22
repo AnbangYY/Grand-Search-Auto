@@ -7,29 +7,22 @@
     android:theme="@android:style/Theme.Translucent.NoTitleBar"
     tools:context=".Activities.MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="156dp"
         android:layout_height="116dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="350dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361"
-        app:srcCompat="@drawable/gta5" />
-
+        app:srcCompat="@drawable/gta5"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/searchByName"
         style="@style/RoundedCornerMaterialButton"
         android:layout_width="120dp"
-        android:layout_height="90dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:text="Search      by name"
@@ -46,7 +39,7 @@
         android:id="@+id/smartSearch"
         style="@style/RoundedCornerMaterialButton2"
         android:layout_width="120dp"
-        android:layout_height="90dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:text="Smart        Search"
@@ -64,7 +57,6 @@
         android:layout_width="291dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="200dp"
         android:text="Smart Cars Sales Search"
@@ -81,11 +73,9 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="282dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Looking for a car? \n We are here to help!"
         android:textAlignment="center"
         android:textColor="#070707"
@@ -93,20 +83,20 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button_helps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="30dp"
         android:background="@android:color/transparent"
         android:text="how to use this app?"
-        android:textColor="#050505"
 
+        android:textColor="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

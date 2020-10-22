@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">2100Assignment</string>
     <string name="scan_pay"><![CDATA[Scan&Pay]]></string>
+    <string name="wheels_like_never_before_n_n_exploring_a_new_chapter_with_four_wheel_o_clock">Wheels like never before \n \n Exploring a new chapter with Four-Wheel O\'Clock</string>
+    <string name="_2020_four_wheel_o_clcock_all_rights_reserved">©2020 Four-Wheel O\'Clcock, All Rights Reserved</string>
+    <string name="logo">Logo</string>
+    <string name="wheels_like_never_before_n_exploring_a_new_chapter_with_four_wheel_o_clock" />
 </resources>

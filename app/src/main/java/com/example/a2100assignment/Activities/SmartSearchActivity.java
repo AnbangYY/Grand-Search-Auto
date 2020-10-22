@@ -5,7 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.a2100assignment.Car;
 import com.example.a2100assignment.CarBST;
@@ -37,21 +44,37 @@ public class SmartSearchActivity extends AppCompatActivity {
     private List sortedResult;
     private ArrayList<Car> result = new ArrayList<>();
     private Node treeCut ;
-    private SearchView searchView;
     private RecyclerView recyclerView;
     private ParseAdapter adapter;
-
+    private ImageView picView;
+    private TextView t21;
+    private TextView t22;
+    private TextView t23;
+    private TextView t24;
+    private TextView t25;
+    private TextView t26;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart_search);
 
+
         recyclerView = findViewById(R.id.result);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        searchView = findViewById(R.id.smartSearchView);
+        picView =findViewById(R.id.imageView13);
+        t21 = findViewById(R.id.textView21);
+        t22 = findViewById(R.id.textView22);
+        t23 = findViewById(R.id.textView23);
+        t24 = findViewById(R.id.textView24);
+        t25 = findViewById(R.id.textView25);
+        t26 = findViewById(R.id.textView26);
+
+
+        Button go = findViewById(R.id.go);
+
 
 
         try {
@@ -76,80 +99,119 @@ public class SmartSearchActivity extends AppCompatActivity {
         adapter = new ParseAdapter(result, SmartSearchActivity.this);
         recyclerView.setAdapter(adapter);
 
-
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        go.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                QueryParser queryParser = new QueryParser(query);
-                ManufacturerExp m = queryParser.parseManufacturer();
-                TypeExp t = queryParser.parseType();
-                SpeedExp s = queryParser.parseSpeed();
-                PriceExp p = queryParser.parsePrice();
+            public void onClick(View v) {
+                EditText editText= findViewById(R.id.smart);
+                String query = editText.getText().toString();
+                picView.setVisibility(View.INVISIBLE);
+                t21.setVisibility(View.INVISIBLE);
+                t22.setVisibility(View.INVISIBLE);
+                t23.setVisibility(View.INVISIBLE);
+                t24.setVisibility(View.INVISIBLE);
+                t25.setVisibility(View.INVISIBLE);
+                t26.setVisibility(View.INVISIBLE);
+
+                result.clear();
+
+                QueryParser queryParser1 = new QueryParser(query);
+                QueryParser queryParser2 = new QueryParser(query);
+                QueryParser queryParser3 = new QueryParser(query);
+                QueryParser queryParser4 = new QueryParser(query);
+                TypeExp t = queryParser1.parseType();
+                ManufacturerExp m = queryParser2.parseManufacturer();
+                SpeedExp s = queryParser3.parseSpeed();
+                PriceExp p = queryParser4.parsePrice();
+
+
 
                 sortedResult = GTAcars; //result with no match
-//
-//                if(p.price!=0){
-//
-//
-//                    if(p.compare){
-//                        treeCut = carTree.greaterCut(new Car("", "", 0, p.price, "", ""));
-//                    }else{
-//                        treeCut = carTree.smallerCut(new Car("", "", 0, p.price, "", ""));
-//                    }
-//                }
-//                CarBST cuttedTree = new CarBST(treeCut);
-//                sortedResult = cuttedTree.generateList();
+                ArrayList<Car> inverseSortedCars = carTree.bigToSmall();
+                ArrayList<Car> sortedCars = carTree.smallToBig();
+                ArrayList<Car> cars = new ArrayList<>(inverseSortedCars);
+                if(p.price!=0) {
+                    if (p.compare) {
+                        for (Car c:inverseSortedCars
+                             ) {
+                            if(c.getPrice()>p.price){
+                                result.add(c);
+                            }
+                        }
+                    }else{
+                        for (Car c:sortedCars
+                             ) {
+                            if(c.getPrice()<p.price){
+                                result.add(c);
+                            }
+                        }
+                    }
 
-//                if(s.speed!=0){
-//                    if(s.compare) {
-//                        for (int i=0; i<sortedResult.size(); i++) {
-//                            Car c = (Car)sortedResult.get(i);
-//                            if (c.getPrice()>s.speed){
-//                                sortedResult = sortedResult.subList(i, sortedResult.size());
-//                                break;
-//                            }
-//                        }
-//                    }
-//
-//                }
-
-                if(!m.manufacturerName.equals("")||!t.type.equals("")){
-                    List dup = sortedResult;
-
-//                    sortedResult.clear();
-//                    for (Object o:dup
-//                         ) {
-//                        Car c = (Car)o;
-//                        if(c.getManufacturer().toLowerCase().equals(m.manufacturerName)||c.getType().toLowerCase().equals(c.getType())){
-//                            sortedResult.add(o);
-//                        }
-//                    }
                 }
 
-                if(sortedResult.size()>0)
-                for (Object o:sortedResult
-                     ) {
-                    Car c = (Car)o;
-                    result.add(c);
+
+                if(s.speed!=0){
+                    if(result.size()>0){
+                        cars.clear();
+                        cars = new ArrayList<>(result);
+                        result.clear();
+                    }
+                    if(s.compare) {
+                        for (Car c:cars
+                        ) {
+                            if(c.getSpeed()>s.speed){
+                                result.add(c);
+                            }
+                        }
+                    }
+                    else {
+                        for (Car c:cars
+                        ) {
+                            if(c.getSpeed()<s.speed){
+                                result.add(c);
+                            }
+                        }
+                    }
                 }
+
+//
+
+                if(!TextUtils.isEmpty(m.manufacturerName)){
+                    if(result.size()>0){
+                        cars.clear();
+                        cars = new ArrayList<>(result);
+                        result.clear();
+                    }
+                    for (Car c:cars
+                    ) {
+                        if(c.getManufacturer().toLowerCase().equals(m.manufacturerName)){
+                            result.add(c);
+                        }
+                    }
+                }
+//
+                if(!TextUtils.isEmpty(t.type)){
+                    if(result.size()>0){
+                        cars.clear();
+                        cars = new ArrayList<>(result);
+                        result.clear();
+                    }
+                    for (Car c:cars
+                    ) {
+                        if(c.getType().toLowerCase().equals(t.type)){
+                            result.add(c);
+                        }
+                    }
+                }
+
+                Toast.makeText(getBaseContext(), m.manufacturerName+" "+t.type +" "+ Integer.valueOf(p.price)+" "+Double.valueOf(s.speed),Toast.LENGTH_SHORT).show();
+
+
+
                 adapter.notifyDataSetChanged();
 
-                return true;
-            }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return false;
-            }
         }
-
-        );
-
-
-
-    }
-
-
-
+        });
+}
 
 }

@@ -77,7 +77,7 @@ public class QueryParser {
     public static SpeedExp parseSpeed(QueryTokenizer q){
         SpeedExp s = new SpeedExp(0, true);
         while(q.hasNext()){
-            if(q.currentToken().toString().toLowerCase().equals("seat")){
+            if(q.currentToken().toString().toLowerCase().equals("speed")){
                 q.nextToken();
                 if((q.currentToken().toString().equals("=")||q.currentToken().toString().equals(">")||q.currentToken().toString().equals("<")) && q.hasNext()){
                     if((q.currentToken().toString().equals("<"))){
@@ -105,10 +105,10 @@ public class QueryParser {
             if(q.currentToken().toString().toLowerCase().equals("price")){
                 q.nextToken();
                 if((q.currentToken().toString().equals("=")||q.currentToken().toString().equals(">")||q.currentToken().toString().equals("<")) && q.hasNext()){
-                    q.nextToken();
                     if((q.currentToken().toString().equals("<"))){
                         p.compare = false;
                     }
+                    q.nextToken();
                     p.price = Integer.parseInt((String)q.currentToken());
                     break;
                 }

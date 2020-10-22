@@ -51,12 +51,15 @@ public class PresentCarActivity extends AppCompatActivity {
         price.setText("$"+getIntent().getStringExtra("price"));
         Picasso.get().load(getIntent().getStringExtra("img")).into(imageView);
 
-        description.setText(detail.replace("SR", getIntent().getStringExtra("model")).replace("sports", getIntent().getStringExtra("type")));
+        if(getIntent().getStringExtra("model").equals("Oppressor Mk II")){
+            description.setText("Extravagant and unpractical, often favored by idiots");
+        }else{
+        description.setText(detail.replace("SR", getIntent().getStringExtra("model")).replace("sports", getIntent().getStringExtra("type")));}
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PresentCarActivity.this,SearchByNameActivity.class);
+                Intent i = new Intent(PresentCarActivity.this,MainActivity.class);
                 startActivity(i);
             }
         });

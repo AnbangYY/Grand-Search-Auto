@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         SearchView mySearchView;
         EditText searchBox;
         Button searchByName;
+        Button smartSearch;
 
         ArrayAdapter adapter;
 
@@ -61,106 +62,23 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+            smartSearch = findViewById(R.id.smartSearch);
 
-
-
-//            try {
-//                InputStream t = getApplicationContext().getAssets().open("GTACars.json");
-//                BufferedReader b = new BufferedReader(new InputStreamReader(t, "UTF-8"));
-//                JsonReader jsonReader = new JsonReader(b);
-//                Gson gson = new Gson();
-//                final Type CUS_LIST_TYPE = new TypeToken<ArrayList<Car>>() {
-//                }.getType();
-//                carCollection = gson.fromJson(jsonReader, CUS_LIST_TYPE);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//
-//            carname.add(carCollection.size());
-//            for (Car c:carCollection
-//            ) {
-//                carname.add(c.getModel());
-//            }
-
-
-//            int size = carname.size();
-
-
-////            mySearchView = (SearchView) findViewById(R.id.searchView);
-////            myListView = (ListView) findViewById(R.id.listView);
-//            ArrayList a = new ArrayList();
-//            a.add("BMW");
-//            a.add("Benz");
-//            a.add("Jaguar");
-//            a.add(carCollection.size());
-//
-//            try {
-//                adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, carname);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            myListView.setAdapter(adapter);
-
-
-//            myListView.setTextFilterEnabled(true);
-//            mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//                @Override
-//                public boolean onQueryTextSubmit(String query) {
-//                    for (Object c : carname) {
-//                        if (c.equals(query)) {
-//                            adapter.getFilter().filter(query);
-//                        } else {
-//                            Toast.makeText(MainActivity.this, "the car that you are looking for is not in the list", Toast.LENGTH_LONG).show();
-//                        }
-//                    }
-//                    return true;
-//                }
-//
-//                @Override
-//                public boolean onQueryTextChange(String newText) {
-//                    if (!TextUtils.isEmpty(newText)) {
-////                        myListView.setFilterText(newText);
-////                    } else {
-////                        myListView.clearTextFilter();
-////                        System.out.println("dsflad");
-////                    }
-//                    return false;
-//                }
-//            });
-        }
+            smartSearch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent =  new Intent(MainActivity.this, SmartSearchActivity.class);
+                    startActivity(intent);
+                }
+            });
 
 
 
 
-//        public class RetrieveData extends AsyncTask<Void, Void, Void>{
-//            @Override
-//            protected Void doInBackground(Void... voids) {
-//                try {
-//                    ArrayList<String> a = getHTMLData();
-//                }catch (Exception e){
-//                    e.printStackTrace();
-//                }
-//                return null;
-//            }
-//        }
-
-        public static ArrayList<Car> getCarList(File file) {
-            ArrayList carCollection = new ArrayList();
-            Gson gson = new Gson();
-            try {
-                JsonReader jsonReader = new JsonReader(new FileReader(file));
-                final Type CUS_LIST_TYPE = new TypeToken<ArrayList<Car>>() {
-                }.getType();
-                carCollection = gson.fromJson(jsonReader, CUS_LIST_TYPE);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
 
-            return carCollection;
-        }
 
-        }
+        }}
 
 
 

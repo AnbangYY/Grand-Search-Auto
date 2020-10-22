@@ -19,7 +19,7 @@ public class LoadingActivity extends MainActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(LoadingActivity.this, MainActivity.class);
+                Intent i = new Intent(LoadingActivity.this, PromoteActivity.class);
                 startActivity(i);
                 finish();
             }

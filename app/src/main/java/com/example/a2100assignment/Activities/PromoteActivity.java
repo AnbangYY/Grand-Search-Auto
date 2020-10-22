@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.a2100assignment.Car;
@@ -21,12 +23,19 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
-public class PromoteActivity extends AppCompatActivity {
+public class PromoteActivity extends AppCompatActivity implements View.OnClickListener {
     private static int TIME_OUT = 2000; //Time to launch the another activity
     private List<Car> promoted = new ArrayList<>();
     private Car show = new Car();
     private ImageView imageView;
+    private int recLen = 5;//跳过倒计时提示5秒
+    private Button mBtn;
+    Timer timer = new Timer();
+    private Handler handler;
+    private Runnable runnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,21 +57,50 @@ public class PromoteActivity extends AppCompatActivity {
                 show = promoted.get(i);
             }
         }
-        //TODO haven't set the layout.
 
         imageView = findViewById(R.id.imageView_promote);
         Picasso.get().load(show.getImgURL()).into(imageView);
 
+        int flag = WindowManager.LayoutParams.FLAG_FULLSCREEN;
+        getWindow().setFlags(flag, flag);
 
-        // display it for 4 seconds.
-        final View myLayout = findViewById(R.id.promoteCar);
-        new Handler().postDelayed(new Runnable() {
+        timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent i = new Intent(PromoteActivity.this, LoadingActivity.class);
-                startActivity(i);
-                finish();
+                runOnUiThread(new Runnable() { // UI thread
+                    @Override
+                    public void run() {
+                        recLen--;
+                        mBtn.setText("Skip " + recLen);//在控件上显示距离跳转的剩余时间
+                        if (recLen < 0) {
+                            timer.cancel();
+                            mBtn.setVisibility(View.GONE);//倒计时到0隐藏字体
+                        }
+                    }
+                });
             }
-        }, TIME_OUT);
+        }, 1000, 1000);//等待时间一秒，停顿时间一秒
+
+        //TODO haven't set the layout.
+
+        handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }, 5000);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent car = new Intent(PromoteActivity.this, PresentCarActivity.class);
+        car.putExtra("model", show.getModel());
+        car.putExtra("manufacturer", show.getManufacturer());
+        car.putExtra("speed", show.getSpeed());
+        car.putExtra("price", show.getPrice());
+        car.putExtra("img", show.getImgURL());
+        startActivity(car);
+        finish();
     }
 }

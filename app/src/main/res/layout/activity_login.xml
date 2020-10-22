@@ -6,6 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/Riglog"
+        android:layout_width="178dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        android:text="Do not have an account? Register here!"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgae_log" />
+
     <TextView
         android:id="@+id/text_log"
         android:layout_width="wrap_content"
@@ -14,10 +31,10 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="5dp"
-        android:text="Log In / Sign up"
+        android:text="Log In "
         android:textColor="#090909"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imgae_log"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,26 +68,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/Backlog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username" />
-
-    <Button
-        android:id="@+id/LoginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="20dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imgae_log"
@@ -86,34 +86,15 @@
         app:srcCompat="@drawable/four" />
 
     <Button
-        android:id="@+id/Backlog"
-        android:layout_width="178dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="90dp"
-        android:text="Forget your password?"
-        android:textSize="7dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/LoginButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
-
-    <Button
         android:id="@+id/LoginBut"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="90dp"
         android:text="LOGIN/SIGNUP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/LoginButton"
-        app:layout_constraintTop_toBottomOf="@+id/Backlog"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,48 +34,52 @@ import static junit.framework.TestCase.assertEquals;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private String[] mStrs = { "qq", "audi", "benz"};
-    SearchView mySearchView;
-    EditText searchBox;
-    Button searchByName;
-    Button smartSearch;
+        //private String[] mStrs = { "qq", "audi", "benz"};
+        SearchView mySearchView;
+        EditText searchBox;
+        Button searchByName;
+        Button smartSearch;
 
-    ArrayAdapter adapter;
+        ArrayAdapter adapter;
 
-    String path = "C:\\Users\\75564\\AndroidStudioProjects\\2100Assignment\\app\\src\\main\\Resources\\JsonFiles\\GTACars.json";
-    ArrayList<Car> carCollection = new ArrayList<>();
-    ArrayList carname = new ArrayList();
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        searchByName = (Button) findViewById(R.id.searchByName);
-
-        searchByName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, SearchByNameActivity.class);
-                startActivity(intent);
-
-            }
-        });
-        smartSearch = findViewById(R.id.smartSearch);
-
-        smartSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, SmartSearchActivity.class);
-                startActivity(intent);
-            }
-        });
+        String path = "C:\\Users\\75564\\AndroidStudioProjects\\2100Assignment\\app\\src\\main\\Resources\\JsonFiles\\GTACars.json";
+        ArrayList<Car> carCollection = new ArrayList<>();
+        ArrayList carname = new ArrayList();
 
 
-    }
-}
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            searchByName = (Button)findViewById(R.id.searchByName);
+
+            searchByName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(MainActivity.this, SearchByNameActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+            smartSearch = findViewById(R.id.smartSearch);
+
+            smartSearch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent =  new Intent(MainActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+
+
+
+
+
+
+        }}
 
 
 

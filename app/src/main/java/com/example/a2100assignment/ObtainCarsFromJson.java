@@ -47,12 +47,12 @@ public class ObtainCarsFromJson {
     public void testGetCarCollection2() throws IOException {
         ArrayList g = new ArrayList();
 //        public Car(String manufacturer, String model, double speed, int price, String type, String URL, boolean promotedItem) {
-        Car a = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
-        Car b = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
-        Car c = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg", true);
-        Car d = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
-        Car e = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
-        Car f = new Car("Model X", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car a = new Car("Model A", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg", true);
+        Car b = new Car("Model B", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car c = new Car("Model C", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg", true);
+        Car d = new Car("Model D", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car e = new Car("Model E", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
+        Car f = new Car("Model F", "Tesla", 138990.0, 5, "Jeep", "https://www.gta5rides.com/vehicleImages/cropped/VSTR-GTAO-front.png.jpg");
 
         g.add(a);
         g.add(b);
@@ -61,6 +61,8 @@ public class ObtainCarsFromJson {
         g.add(e);
         g.add(f);
 
+
+        c.showIt(true);
         File h = new File("src\\main\\assets\\PromotedCars.json");
         Car.savePromotedToJSON(g, h);
 //        e.add(modelx.getName());

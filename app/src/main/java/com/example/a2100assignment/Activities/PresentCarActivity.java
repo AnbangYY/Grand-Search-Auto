@@ -22,6 +22,7 @@ public class PresentCarActivity extends AppCompatActivity {
     private TextView price;
     private TextView description;
     private Button back;
+    private Button seeMore;
 
     private String detail = "\"The SR was made for only one thing: to make every other sports car look like it's the asthmatic kid in gym. Now get in line.\"";
 
@@ -42,6 +43,7 @@ public class PresentCarActivity extends AppCompatActivity {
         price = findViewById(R.id.textView19);
         back = findViewById(R.id.btn_back1);
         description = findViewById(R.id.textView20);
+        seeMore = findViewById(R.id.button_seemore);
 
 
         model.setText(getIntent().getStringExtra("model"));
@@ -63,6 +65,13 @@ public class PresentCarActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+//        seeMore.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent recommended = new Intent()
+//            }
+//        });
 
 
 

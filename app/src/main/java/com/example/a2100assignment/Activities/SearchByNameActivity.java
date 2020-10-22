@@ -79,7 +79,7 @@ public class SearchByNameActivity extends AppCompatActivity {
 
                 Boolean found = false;
                for(Car c : GTAcars){
-                    if(c.getModel().toLowerCase().equals(query)){
+                    if(Car.approximateEqual(c.getModel(), query)){
                         GTAcars.clear();
                         GTAcars.add(c);
                         adapter.notifyDataSetChanged();

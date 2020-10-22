@@ -10,23 +10,48 @@ import android.widget.ImageView;
 
 import com.example.a2100assignment.Car;
 import com.example.a2100assignment.R;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 import com.squareup.picasso.Picasso;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 
 public class PromoteActivity extends AppCompatActivity {
-    private static int TIME_OUT = 4000; //Time to launch the another activity
-    private Car promoted = new Car();
+    private static int TIME_OUT = 2000; //Time to launch the another activity
+    private List<Car> promoted = new ArrayList<>();
+    private Car show = new Car();
     private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promote);
-        promoted = getIntent().getParcelableExtra("promoted");
+        try {
+            InputStream t = getApplicationContext().getAssets().open("PromotedCars.json");
+            BufferedReader b = new BufferedReader(new InputStreamReader(t, "UTF-8"));
+            JsonReader jsonReader = new JsonReader(b);
+            Gson gson = new Gson();
+            final Type CUS_LIST_TYPE = new TypeToken<ArrayList<Car>>() {
+            }.getType();
+            promoted = gson.fromJson(jsonReader, CUS_LIST_TYPE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < promoted.size(); i++) {
+            if (promoted.get(i).showOrNot()) {
+                show = promoted.get(i);
+            }
+        }
         //TODO haven't set the layout.
+
         imageView = findViewById(R.id.imageView_promote);
-        Picasso.get().load(getIntent().getStringExtra("img")).into(imageView);
+        Picasso.get().load(show.getImgURL()).into(imageView);
 
 
         // display it for 4 seconds.
@@ -34,7 +59,7 @@ public class PromoteActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(PromoteActivity.this, MainActivity.class);
+                Intent i = new Intent(PromoteActivity.this, LoadingActivity.class);
                 startActivity(i);
                 finish();
             }

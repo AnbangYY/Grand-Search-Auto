@@ -127,11 +127,12 @@ public class Car implements Comparable<Car> {
      */
     public static void savePromotedToJSON(List<Car> cars, File file) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        List<Car> promoted = new ArrayList<>();
         for (int i = 0; i < cars.size(); i++) {
-            if (!cars.get(i).isPromotedItem()) cars.remove(i);
+            if (cars.get(i).isPromotedItem()) promoted.add(cars.get(i));
         }
         try (FileWriter fw = new FileWriter(file)) {
-            gson.toJson(cars, fw);
+            gson.toJson(promoted, fw);
         } catch (Exception e) {
             e.printStackTrace();
         }

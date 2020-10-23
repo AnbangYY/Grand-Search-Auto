@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.a2100assignment.R;
 
 public class LoadingActivity extends MainActivity {
-    private static int TIME_OUT = 2000; //Time to launch the another activity
+    private static int TIME_OUT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

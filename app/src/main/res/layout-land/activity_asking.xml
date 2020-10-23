@@ -20,15 +20,15 @@
 
     <TextView
         android:id="@+id/textView_cardetails"
-        android:layout_width="268dp"
-        android:layout_height="27dp"
+        android:layout_width="390dp"
+        android:layout_height="45dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="25dp"
         android:text="Smart Car Sales Search"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#070707"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView_carpic"
@@ -40,7 +40,7 @@
         android:layout_width="228dp"
         android:layout_height="43dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="150dp"
         android:text="Asking Questions"
         android:textAllCaps="true"
@@ -48,6 +48,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_carpic" />
 
@@ -56,56 +57,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="295dp"
-        android:layout_marginBottom="40dp"
         android:background="@color/color1"
-        android:textColor="@color/white"
         android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="238dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/backask"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/askup"
-        app:srcCompat="@drawable/userservice" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="300dp"
-        android:layout_height="185dp"
+        android:layout_width="309dp"
+        android:layout_height="151dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Tell us what's in your mind...."
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/askup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_moredetails"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/askup"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="30dp"
         android:background="@color/color1"
         android:text="upload"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="185dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_moredetails"
+        app:srcCompat="@drawable/userservice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

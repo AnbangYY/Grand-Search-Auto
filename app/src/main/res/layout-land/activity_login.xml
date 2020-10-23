@@ -10,9 +10,13 @@
         android:id="@+id/Riglog"
         android:layout_width="178dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="115dp"
         android:background="@android:color/transparent"
         android:text="Do not have an account? Register here!"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LoginBut"
         app:layout_constraintStart_toStartOf="@+id/Password"
         app:layout_constraintTop_toTopOf="@+id/LoginBut" />
 

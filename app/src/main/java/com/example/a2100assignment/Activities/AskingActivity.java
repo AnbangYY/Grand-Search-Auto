@@ -40,7 +40,8 @@ public class AskingActivity extends AppCompatActivity {
 
 
                 Toast.makeText(AskingActivity.this, "Your Questions are Uploading", Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(AskingActivity.this, UploadingActivity.class);
+                startActivity(intent);
 
 
 

@@ -73,7 +73,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+            usr = findViewById(R.id.button_helps);
 
+
+            usr.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent =  new Intent(MainActivity.this, UserguideActivity.class);
+                    startActivity(intent);
+                }
+            });
 
 
 

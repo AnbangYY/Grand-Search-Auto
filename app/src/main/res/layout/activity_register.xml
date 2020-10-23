@@ -10,28 +10,29 @@
         android:id="@+id/text_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="5dp"
         android:text=" Sign up"
-        android:textColor="@color/darkergrey"
-        android:textSize="35sp"
+        android:textColor="#090909"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imgae_log"
-
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Username"
         style="@android:style/Widget.DeviceDefault.EditText"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="1dp"
         android:ems="10"
-        android:hint="Username / email"
+        android:hint="Enter ur email"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +42,7 @@
     <EditText
         android:id="@+id/Password"
         style="@android:style/Widget.DeviceDefault.EditText"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="25dp"
@@ -57,8 +58,8 @@
 
     <ImageView
         android:id="@+id/imgae_log"
-        android:layout_width="wrap_content"
-        android:layout_height="253dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="1dp"
@@ -66,31 +67,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_log"
-        app:srcCompat="@drawable/pp" />
+        app:srcCompat="@drawable/four" />
 
     <Button
         android:id="@+id/Backlog"
         android:layout_width="178dp"
         android:layout_height="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="210dp"
         android:background="@android:color/transparent"
+        android:text="Aleady hava an account? Login here!"
         android:textSize="14sp"
-        android:text="ALREADY HAVE AN ACCOUNT? LOGIN HERE"
-        app:layout_constraintStart_toStartOf="@+id/Password"
-        app:layout_constraintTop_toTopOf="@id/LoginBut"></Button>
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgae_log"
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/LoginBut"
-        style="@style/RoundedCornerMaterialButton"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgae_log"
         app:layout_constraintTop_toBottomOf="@+id/Password"
         app:layout_constraintVertical_bias="0.0" />
 

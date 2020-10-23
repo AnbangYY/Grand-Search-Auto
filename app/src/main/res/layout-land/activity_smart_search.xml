@@ -17,29 +17,36 @@
         android:id="@+id/textView21"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text=" Try these queries:"
         android:textColor="@color/darkergrey"
         android:textSize="30sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/smart" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="  Manufacturer = Grotti;"
         android:textColor="@color/light_grey"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="  Type = Super;"
         android:textColor="@color/light_grey"
@@ -52,51 +59,59 @@
         android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="  Speed > 120;"
         android:textColor="@color/light_grey"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView23"
-        tools:layout_editor_absoluteX="115dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="  price > 76989;"
         android:textColor="@color/light_grey"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
-        tools:layout_editor_absoluteX="115dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-black"
         android:text=" Or Combine Them All!"
         android:textColor="@color/darkergrey"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/go"
-        app:srcCompat="@drawable/gta5" />
+        app:srcCompat="@drawable/gold" />
 
     <EditText
         android:id="@+id/smart"
-        android:layout_width="0dp"
+        android:layout_width="570dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginTop="20dp"
@@ -105,21 +120,22 @@
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/light_grey"
-        app:layout_constraintEnd_toStartOf="@+id/go"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/go"
         style="@style/RoundedCornerMaterialButton"
-        android:layout_width="70dp"
+        android:layout_width="120dp"
         android:layout_height="40dp"
 
+        android:layout_marginRight="10dp"
 
-        android:layout_marginEnd="10dp"
+
         android:text="Go!"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smart"
         app:layout_constraintTop_toTopOf="@+id/smart" />
 
 

@@ -25,4 +25,8 @@
         <item name="android:background">@drawable/rounded_shape2</item>
     </style>
 
+    <style name="RoundedCornerMaterialButton3" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape3</item>
+    </style>
+
 </resources>

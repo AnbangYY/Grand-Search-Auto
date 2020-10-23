@@ -23,6 +23,7 @@
         android:textColor="@color/darkergrey"
         android:textSize="38sp"
         android:textStyle="bold"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/smart" />
 
@@ -94,12 +95,13 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="508dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gta5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/gold" />
 
     <EditText
         android:id="@+id/smart"
@@ -134,18 +136,28 @@
 
     <Button
         android:id="@+id/LogoutBut"
+        style="@style/RoundedCornerMaterialButton3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:onClick="Logout"
+        android:text="Logout"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="190dp"
-        android:text="Logout"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/pinkred"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
-        android:onClick="Logout" />
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

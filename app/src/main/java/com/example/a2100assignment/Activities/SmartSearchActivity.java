@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -27,6 +28,7 @@ import com.example.a2100assignment.QueryTokenizer;
 import com.example.a2100assignment.R;
 import com.example.a2100assignment.SpeedExp;
 import com.example.a2100assignment.TypeExp;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -38,6 +40,7 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.BitSet;
+import java.util.Collections;
 import java.util.List;
 
 public class SmartSearchActivity extends AppCompatActivity {
@@ -55,6 +58,7 @@ public class SmartSearchActivity extends AppCompatActivity {
     private TextView t24;
     private TextView t25;
     private TextView t26;
+    private FloatingActionButton sort;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +77,8 @@ public class SmartSearchActivity extends AppCompatActivity {
         t24 = findViewById(R.id.textView24);
         t25 = findViewById(R.id.textView25);
         t26 = findViewById(R.id.textView26);
-
+        sort = (FloatingActionButton)findViewById(R.id.floatingActionButton2);
+        sort.setVisibility(View.INVISIBLE);
 
         Button go = findViewById(R.id.go);
 
@@ -98,8 +103,11 @@ public class SmartSearchActivity extends AppCompatActivity {
             carTree.insert(c);
         }
 
+
+
         adapter = new ParseAdapter(result, SmartSearchActivity.this);
         recyclerView.setAdapter(adapter);
+
 
         go.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -203,6 +211,7 @@ public class SmartSearchActivity extends AppCompatActivity {
                             result.add(c);
                         }
                     }
+                    sort.setVisibility(View.INVISIBLE);
                 }
 
                 Toast.makeText(getBaseContext(), m.manufacturerName+" "+t.type +" "+ Integer.valueOf(p.price)+" "+Double.valueOf(s.speed),Toast.LENGTH_SHORT).show();
@@ -220,9 +229,25 @@ public class SmartSearchActivity extends AppCompatActivity {
 
                 adapter.notifyDataSetChanged();
 
+                if(result.size()!=0){
+                    sort.setVisibility(View.VISIBLE);
+                }else{
+                    sort.setVisibility(View.INVISIBLE);
+                }
+
 
         }
         });
+
+        sort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Collections.reverse(result);
+                adapter.notifyDataSetChanged();
+            }
+        });
+
+
 }
 
     public void Logout(View view) {

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         EditText searchBox;
         Button searchByName;
         Button smartSearch;
-
+        Button usr;
         ArrayAdapter adapter;
 
         String path = "C:\\Users\\75564\\AndroidStudioProjects\\2100Assignment\\app\\src\\main\\Resources\\JsonFiles\\GTACars.json";
@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-
 
 
 

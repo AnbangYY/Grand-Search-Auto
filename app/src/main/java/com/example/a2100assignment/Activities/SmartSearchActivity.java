@@ -266,7 +266,7 @@ public class SmartSearchActivity extends AppCompatActivity {
 
     public void Logout(View view) {
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+        startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
         finish();
     }
 }

@@ -13,7 +13,7 @@ public class UploadingActivity extends AppCompatActivity {
 
 
 
-    private static int TIME_OUT = 6000;
+    private static int TIME_OUT = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

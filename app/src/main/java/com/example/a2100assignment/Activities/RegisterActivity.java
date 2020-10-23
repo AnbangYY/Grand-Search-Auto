@@ -32,6 +32,9 @@ public class RegisterActivity extends AppCompatActivity {
         ResigterBut = findViewById(R.id.LoginBut);
         Backlog = findViewById(R.id.Backlog);
         fAuth = FirebaseAuth.getInstance();
+        if(fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(),SmartSearchActivity.class));
+        }
         ResigterBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,9 +42,15 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = Password.getText().toString().trim();
                 if (TextUtils.isEmpty(username)){
                     Username.setError("please enter username");
+                    return;
                 }
                 if (TextUtils.isEmpty(password)){
                     Password.setError("please enter password");
+                    return;
+                }
+                if (password.length()<7){
+                    Password.setError("too short password");
+                    return;
                 }
                 fAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override

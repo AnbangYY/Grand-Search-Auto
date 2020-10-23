@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/gta5"
-        android:label="carSearcher"
+        android:label="Grand Search Auto"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

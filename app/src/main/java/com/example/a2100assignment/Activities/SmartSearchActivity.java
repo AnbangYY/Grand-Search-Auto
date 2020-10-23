@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -58,6 +59,7 @@ public class SmartSearchActivity extends AppCompatActivity {
     private TextView t24;
     private TextView t25;
     private TextView t26;
+    private Button easterEgg;
     private FloatingActionButton sort;
 
     @Override
@@ -104,6 +106,16 @@ public class SmartSearchActivity extends AppCompatActivity {
         }
 
 
+        easterEgg=findViewById(R.id.easterEgg);
+
+        easterEgg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MediaPlayer mp = MediaPlayer.create(getBaseContext(), R.raw.hwga);
+                mp.start();
+            }
+        });
+
 
         adapter = new ParseAdapter(result, SmartSearchActivity.this);
         recyclerView.setAdapter(adapter);
@@ -123,6 +135,8 @@ public class SmartSearchActivity extends AppCompatActivity {
                 t26.setVisibility(View.INVISIBLE);
 
                 result.clear();
+
+
 
                 QueryParser queryParser1 = new QueryParser(query);
                 QueryParser queryParser2 = new QueryParser(query);

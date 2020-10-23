@@ -38,6 +38,9 @@ public class LoginActivity extends AppCompatActivity {
         Password = findViewById(R.id.Password);
         Riglog = findViewById(R.id.Riglog);
         fAuth = FirebaseAuth.getInstance();
+        if(fAuth.getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(),SmartSearchActivity.class));
+        }
     LoginBut.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -45,9 +48,11 @@ public class LoginActivity extends AppCompatActivity {
             String password = Password.getText().toString().trim();
             if (TextUtils.isEmpty(username)){
                 Username.setError("please enter username");
+                return;
             }
             if (TextUtils.isEmpty(password)){
                 Password.setError("please enter password");
+                return;
             }
             fAuth.signInWithEmailAndPassword(username,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override

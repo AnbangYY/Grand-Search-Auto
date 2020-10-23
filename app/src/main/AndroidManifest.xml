@@ -22,13 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activities.PromoteActivity">
-<!--                        <intent-filter>-->
-<!--                            <action android:name="android.intent.action.MAIN" />-->
-<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                        </intent-filter>-->
-        </activity>
-
         <activity android:name=".Activities.PresentCarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
@@ -49,6 +42,17 @@
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.LoginActivity">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Activities.RegisterActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
+
 
 </manifest>

@@ -32,7 +32,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="1dp"
         android:ems="10"
-        android:hint="Username / email"
+        android:hint="Enter ur email"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +58,8 @@
 
     <ImageView
         android:id="@+id/imgae_log"
-        android:layout_width="312dp"
-        android:layout_height="253dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="1dp"
@@ -76,15 +76,16 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="230dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="210dp"
         android:background="@android:color/transparent"
         android:text="Aleady hava an account? Login here!"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgae_log" />
+        app:layout_constraintTop_toBottomOf="@+id/imgae_log"
+        app:layout_constraintVertical_bias="0.278" />
 
     <Button
         android:id="@+id/LoginBut"
@@ -92,11 +93,11 @@
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Backlog"
+        app:layout_constraintStart_toEndOf="@+id/imgae_log"
         app:layout_constraintTop_toBottomOf="@+id/Password"
         app:layout_constraintVertical_bias="0.0" />
 

@@ -32,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         ResigterBut = findViewById(R.id.LoginBut);
         Backlog = findViewById(R.id.Backlog);
         fAuth = FirebaseAuth.getInstance();
+
         ResigterBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +44,18 @@ public class RegisterActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(password)){
                     Password.setError("please enter password");
                 }
-                fAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                fAuth.signInAnonymously().addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(RegisterActivity.this,"register complete",Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),SmartSearchActivity.class));
+                        }else {
+                            Toast.makeText(RegisterActivity.this,"register fail" +task.getException(),Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+                fAuth.signInWithEmailAndPassword(username,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
